@@ -28,3 +28,4 @@ Implement GANs
 
 # Diffusion Models
 1. DDPM => https://arxiv.org/abs/2006.11239
+2. DDIM => https://arxiv.org/abs/2010.02502
