@@ -3,6 +3,9 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from einops import reduce
+from functools import partial
+
 
 from .base_network import BaseNetwork
 
@@ -118,10 +121,25 @@ class SinusoidalPE(nn.Module):  # 여기에서는 특이하게도 시간 t를 �
         embedding = t[:, None] * embedding[None, :]
         embedding = torch.cat([embedding.sin(), embedding.cos()], dim=-1)
         return embedding
+class WeightStandardizedConv2d(nn.Conv2d):
+    """
+    https://arxiv.org/abs/1903.10520
+    weight standardization purportedly works synergistically with group normalization
+    """
+    def forward(self, x):
+        eps = 1e-5 if x.dtype == torch.float32 else 1e-3
+
+        weight = self.weight
+        mean = reduce(weight, 'o ... -> o 1 1 1', 'mean')
+        var = reduce(weight, 'o ... -> o 1 1 1', partial(torch.var, unbiased = False))
+        normalized_weight = (weight - mean) * (var + eps).rsqrt()
+        return F.conv2d(x, normalized_weight, self.bias, self.stride, self.padding, self.dilation, self.groups)
+
 class Blk(nn.Module):
     def __init__(self, in_ch, out_ch, groups=8):
         super().__init__()
-        self.conv = nn.Conv2d(in_ch, out_ch, 3, 1, 1)
+        self.conv = WeightStandardizedConv2d(in_ch, out_ch, 3, 1, 1)
+        # self.conv = nn.Conv2d(in_ch, out_ch, 3, 1, 1)
         self.norm = nn.GroupNorm(groups, out_ch)
         self.act = nn.SiLU()
     def forward(self, x, scale_shift=None):
@@ -263,18 +281,3 @@ class Coef(BaseNetwork):
         register_buffer("posterior_mean_coef1", (torch.sqrt(alphas_cumprod_prev) * betas) / (1.0 - alphas_cumprod))  # eq. 7
         register_buffer("posterior_mean_coef2", (torch.sqrt(alphas) * (1.0 - alphas_cumprod_prev)) / (1.0 - alphas_cumprod))  # eq. 7
         register_buffer("p2_loss_weight", (p2_loss_weight_k + alphas_cumprod / (1.0 - alphas_cumprod)) ** (-p2_loss_weight_gamma))
-
-        # my_print = lambda x: print(f"{x} : {getattr(self, x)[:5]}")
-        # my_print("p2_loss_weight")
-        # my_print("posterior_mean_coef2")
-        # my_print("posterior_mean_coef1")
-        # my_print("posterior_log_variance_clipped")
-        # my_print("posterior_variance")
-        # my_print("sqrt_recipm1_alphas_cumprod")
-        # my_print("sqrt_recip_alphas_cumprod")
-        # my_print("log_one_minus_alphas_cumprod")
-        # my_print("sqrt_one_minus_alphas_cumprod")
-        # my_print("sqrt_alphas_cumprod")
-        # my_print("alphas_cumprod_prev")
-        # my_print("alphas_cumprod")
-        # exit()

@@ -17,10 +17,10 @@ def build_args(is_test=False):
 
     #### dataset ####
     parser.add_argument("--data_root_dir", type=str, default="/home/data/")
-    parser.add_argument("--data_name", type=str, default="CelebA_HQ", choices=["LSUN_church_outdoor", "CelebA_HQ"])
+    parser.add_argument("--data_name", type=str, default="CelebA-HQ-img", choices=["LSUN_church_outdoor", "CelebA-HQ-img"])
     parser.add_argument("--n_workers", type=int, default=4)
-    parser.add_argument("--img_size_H", type=int, default=128)
-    parser.add_argument("--img_size_W", type=int, default=128)
+    parser.add_argument("--img_size_H", type=int, default=256)
+    parser.add_argument("--img_size_W", type=int, default=256)
     parser.add_argument("--in_ch", type=int, default=3)
     parser.add_argument("--out_ch", type=int, default=3)
 
@@ -29,31 +29,34 @@ def build_args(is_test=False):
     parser.add_argument("--self_condition", type=bool, default=False, help="모델이 예측한 x0를 추가 입력으로 함.")
     parser.add_argument("--model_objective", type=str, default="pred_noise", choices=["pred_noise", "pred_x0"])
     parser.add_argument("--ngf", type=int, default=64)
-    parser.add_argument("--ngf_mults", default=[1,2,4,8])
+    parser.add_argument("--ngf_mults", default=[1,2,4,8,8,8])
     parser.add_argument("--resnet_blk_group_bn", type=int, default=8)
     
     #### train & test ####
-    parser.add_argument("--n_iters", type=int, default=100000)
-    parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--n_iters", type=int, default=10_000_000)
+    parser.add_argument("--batch_size", type=int, default=12)
+    parser.add_argument("--eval_batch_size", type=int, default=4)
     parser.add_argument("--n_timesteps", type=int, default=1000, help="total time step T. default T=1000 in official paper.")
     parser.add_argument("--beta_schedule", type=str, default="linear", choices=["linear", "cosine"], help="initialize method for beta")
     parser.add_argument("--sampling_timesteps", type=int, default=None)
-    parser.add_argument("--ddim_sampling_eta", type=float, default=1.0)
+    parser.add_argument("--ddim_sampling_eta", type=float, default=1.0)  # 1이면 DDIM, 0이면 DDPM
     parser.add_argument("--p2_loss_weight_k", type=float, default=1)
     parser.add_argument("--p2_loss_weight_gamma", type=float, default=0.0)
     parser.add_argument("--loss_type", type=str, default="l1", choices=["l1", "l2"])
     parser.add_argument("--lr", type=float, default=8e-5)
     parser.add_argument("--betas", default=(0.9, 0.99))
+    parser.add_argument("--n_fid_images", type=int, default=30000)
+    parser.add_argument("--eval_iter_freq", type=int, default=500000)
     
     #### save & load ####
     parser.add_argument("--no_save", action="store_true")
     parser.add_argument("--save_root_dir", type=str, default="/media/data1/jeonghokim/GANs/DDPM")
     parser.add_argument("--save_name", type=str, default="")
-    parser.add_argument("--log_save_iter_freq", type=int, default=100)
+    parser.add_argument("--log_save_iter_freq", type=int, default=1000)
     parser.add_argument("--model_save_iter_freq", type=int, default=10000)
-    parser.add_argument("--img_save_iter_freq", type=int, default=100)
-    parser.add_argument("--eval_iter_freq", type=int, default=50000)
-    parser.add_argument("--n_save_images", type=int, default=4)    
+    parser.add_argument("--img_save_iter_freq", type=int, default=5000)
+    parser.add_argument("--n_save_images", type=int, default=8)    
+    parser.add_argument("--resume_path", type=str, default="")
 
     #### config ####
     parser.add_argument("--use_DDP", action="store_true")
@@ -74,7 +77,7 @@ def build_args(is_test=False):
     args.save_dir = opj(args.save_root_dir, args.save_name)
     args.img_save_dir = opj(args.save_dir, "save_images")
     args.model_save_dir = opj(args.save_dir, "save_models")
-    args.eval_save_dir = opj(args.save_dir, "eval_save_image")
+    args.eval_save_dir = opj(args.save_dir, "eval_save_images")
     args.log_path = opj(args.save_dir, "log.txt")
     args.config_path = opj(args.save_dir, "config.json")
     if not args.no_save:
@@ -99,14 +102,9 @@ def main_worker(args, logger):
         if args.use_DDP:
             train_loader.sampler.set_epoch(epoch)
         for img, _ in train_loader:
-            if cur_iter >= args.n_iters:
-                break_flag = True
-                break
             img = img.cuda(args.local_rank)
             model.set_input(img)
-            model.train()    
-            if args.local_rank == 0:
-                model.update_ema()
+            model.train()
 
             BS = img.shape[0]
             loss_G_meter.update(model.loss_val, BS)
@@ -126,7 +124,16 @@ def main_worker(args, logger):
                 to_path = opj(args.img_save_dir, f"{cur_iter}_{args.n_iters}.png")
                 if args.local_rank == 0:
                     cv2.imwrite(to_path, gene_img_img[:,:,::-1])
-            
+            if cur_iter % args.eval_iter_freq == 0:
+                real_dir = opj(args.data_root_dir, args.data_name)
+                fid_dict = model.evaluate(real_dir) 
+                msg = f"[FID]_[iter - {cur_iter}/{args.n_iters}]_[FID - {fid_dict['fid']:.4f}]"
+                logger.write(msg)            
+            if args.use_DDP:
+                dist.barrier()  
+            if cur_iter >= args.n_iters:
+                break_flag = True
+                break
             cur_iter += 1
         if break_flag:
             break

@@ -1,0 +1,2047 @@
+nohup: ignoring input
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+data_root_dir            : /home/data/
+data_name                : LSUN_church_outdoor
+n_workers                : 4
+img_size_H               : 256
+img_size_W               : 256
+in_ch                    : 3
+out_ch                   : 3
+G_name                   : UNet
+self_condition           : False
+model_objective          : pred_noise
+ngf                      : 64
+ngf_mults                : [1, 2, 4, 8]
+resnet_blk_group_bn      : 8
+n_iters                  : 100000
+batch_size               : 16
+n_timesteps              : 1000
+beta_schedule            : linear
+sampling_timesteps       : None
+ddim_sampling_eta        : 1.0
+p2_loss_weight_k         : 1
+p2_loss_weight_gamma     : 0.0
+loss_type                : l1
+lr                       : 8e-05
+betas                    : (0.9, 0.99)
+no_save                  : False
+save_root_dir            : /media/data1/jeonghokim/GANs/DDPM
+save_name                : 20220822_LSUN_multi_gpu
+log_save_iter_freq       : 100
+model_save_iter_freq     : 10000
+img_save_iter_freq       : 100
+eval_iter_freq           : 50000
+n_save_images            : 4
+use_DDP                  : True
+local_rank               : 0
+n_gpus                   : 2
+save_dir                 : /media/data1/jeonghokim/GANs/DDPM/20220822_LSUN_multi_gpu
+img_save_dir             : /media/data1/jeonghokim/GANs/DDPM/20220822_LSUN_multi_gpu/save_images
+model_save_dir           : /media/data1/jeonghokim/GANs/DDPM/20220822_LSUN_multi_gpu/save_models
+eval_save_dir            : /media/data1/jeonghokim/GANs/DDPM/20220822_LSUN_multi_gpu/eval_save_image
+log_path                 : /media/data1/jeonghokim/GANs/DDPM/20220822_LSUN_multi_gpu/log.txt
+config_path              : /media/data1/jeonghokim/GANs/DDPM/20220822_LSUN_multi_gpu/config.json
+[Train] # of imgs : 126224
+1 epochs : 7889 iters
+# of G parameters : 36251779
+[Train]_[Elapsed Time - 0:00:48]_[iter - 100/100000]_[Epoch - 1]_[loss - 0.2680]_[loss mean- 0.3484]
+==============================
+[Train]_[Elapsed Time - 0:02:55]_[iter - 200/100000]_[Epoch - 1]_[loss - 0.1275]_[loss mean- 0.2452]
+==============================
+[Train]_[Elapsed Time - 0:05:03]_[iter - 300/100000]_[Epoch - 1]_[loss - 0.1302]_[loss mean- 0.2071]
+==============================
+[Train]_[Elapsed Time - 0:07:11]_[iter - 400/100000]_[Epoch - 1]_[loss - 0.0937]_[loss mean- 0.1829]
+==============================
+[Train]_[Elapsed Time - 0:09:19]_[iter - 500/100000]_[Epoch - 1]_[loss - 0.1610]_[loss mean- 0.1679]
+==============================
+[Train]_[Elapsed Time - 0:11:27]_[iter - 600/100000]_[Epoch - 1]_[loss - 0.0806]_[loss mean- 0.1564]
+==============================
+[Train]_[Elapsed Time - 0:13:35]_[iter - 700/100000]_[Epoch - 1]_[loss - 0.0708]_[loss mean- 0.1481]
+==============================
+[Train]_[Elapsed Time - 0:15:42]_[iter - 800/100000]_[Epoch - 1]_[loss - 0.0409]_[loss mean- 0.1414]
+==============================
+[Train]_[Elapsed Time - 0:17:50]_[iter - 900/100000]_[Epoch - 1]_[loss - 0.0796]_[loss mean- 0.1365]
+==============================
+[Train]_[Elapsed Time - 0:19:58]_[iter - 1000/100000]_[Epoch - 1]_[loss - 0.0595]_[loss mean- 0.1320]
+==============================
+[Train]_[Elapsed Time - 0:22:06]_[iter - 1100/100000]_[Epoch - 1]_[loss - 0.0783]_[loss mean- 0.1279]
+==============================
+[Train]_[Elapsed Time - 0:24:14]_[iter - 1200/100000]_[Epoch - 1]_[loss - 0.0696]_[loss mean- 0.1242]
+==============================
+[Train]_[Elapsed Time - 0:26:22]_[iter - 1300/100000]_[Epoch - 1]_[loss - 0.0995]_[loss mean- 0.1213]
+==============================
+[Train]_[Elapsed Time - 0:28:30]_[iter - 1400/100000]_[Epoch - 1]_[loss - 0.0640]_[loss mean- 0.1188]
+==============================
+[Train]_[Elapsed Time - 0:30:38]_[iter - 1500/100000]_[Epoch - 1]_[loss - 0.0539]_[loss mean- 0.1168]
+==============================
+[Train]_[Elapsed Time - 0:32:46]_[iter - 1600/100000]_[Epoch - 1]_[loss - 0.0504]_[loss mean- 0.1149]
+==============================
+[Train]_[Elapsed Time - 0:34:53]_[iter - 1700/100000]_[Epoch - 1]_[loss - 0.1520]_[loss mean- 0.1130]
+==============================
+[Train]_[Elapsed Time - 0:37:01]_[iter - 1800/100000]_[Epoch - 1]_[loss - 0.0851]_[loss mean- 0.1111]
+==============================
+[Train]_[Elapsed Time - 0:39:09]_[iter - 1900/100000]_[Epoch - 1]_[loss - 0.0377]_[loss mean- 0.1093]
+==============================
+[Train]_[Elapsed Time - 0:41:17]_[iter - 2000/100000]_[Epoch - 1]_[loss - 0.1091]_[loss mean- 0.1081]
+==============================
+[Train]_[Elapsed Time - 0:43:25]_[iter - 2100/100000]_[Epoch - 1]_[loss - 0.1211]_[loss mean- 0.1067]
+==============================
+[Train]_[Elapsed Time - 0:45:32]_[iter - 2200/100000]_[Epoch - 1]_[loss - 0.0696]_[loss mean- 0.1054]
+==============================
+[Train]_[Elapsed Time - 0:47:40]_[iter - 2300/100000]_[Epoch - 1]_[loss - 0.0675]_[loss mean- 0.1043]
+==============================
+[Train]_[Elapsed Time - 0:49:48]_[iter - 2400/100000]_[Epoch - 1]_[loss - 0.1016]_[loss mean- 0.1034]
+==============================
+[Train]_[Elapsed Time - 0:51:56]_[iter - 2500/100000]_[Epoch - 1]_[loss - 0.0791]_[loss mean- 0.1025]
+==============================
+[Train]_[Elapsed Time - 0:54:04]_[iter - 2600/100000]_[Epoch - 1]_[loss - 0.0571]_[loss mean- 0.1015]
+==============================
+[Train]_[Elapsed Time - 0:56:12]_[iter - 2700/100000]_[Epoch - 1]_[loss - 0.0783]_[loss mean- 0.1006]
+==============================
+[Train]_[Elapsed Time - 0:58:19]_[iter - 2800/100000]_[Epoch - 1]_[loss - 0.0814]_[loss mean- 0.0998]
+==============================
+[Train]_[Elapsed Time - 1:00:27]_[iter - 2900/100000]_[Epoch - 1]_[loss - 0.0721]_[loss mean- 0.0989]
+==============================
+[Train]_[Elapsed Time - 1:02:35]_[iter - 3000/100000]_[Epoch - 1]_[loss - 0.0398]_[loss mean- 0.0979]
+==============================
+[Train]_[Elapsed Time - 1:04:43]_[iter - 3100/100000]_[Epoch - 1]_[loss - 0.0604]_[loss mean- 0.0973]
+==============================
+[Train]_[Elapsed Time - 1:06:51]_[iter - 3200/100000]_[Epoch - 1]_[loss - 0.0614]_[loss mean- 0.0966]
+==============================
+[Train]_[Elapsed Time - 1:08:59]_[iter - 3300/100000]_[Epoch - 1]_[loss - 0.1187]_[loss mean- 0.0959]
+==============================
+[Train]_[Elapsed Time - 1:11:07]_[iter - 3400/100000]_[Epoch - 1]_[loss - 0.1051]_[loss mean- 0.0953]
+==============================
+[Train]_[Elapsed Time - 1:13:15]_[iter - 3500/100000]_[Epoch - 1]_[loss - 0.0376]_[loss mean- 0.0946]
+==============================
+[Train]_[Elapsed Time - 1:15:23]_[iter - 3600/100000]_[Epoch - 1]_[loss - 0.0939]_[loss mean- 0.0941]
+==============================
+[Train]_[Elapsed Time - 1:17:30]_[iter - 3700/100000]_[Epoch - 1]_[loss - 0.0843]_[loss mean- 0.0934]
+==============================
+[Train]_[Elapsed Time - 1:19:38]_[iter - 3800/100000]_[Epoch - 1]_[loss - 0.1126]_[loss mean- 0.0931]
+==============================
+[Train]_[Elapsed Time - 1:21:46]_[iter - 3900/100000]_[Epoch - 1]_[loss - 0.0654]_[loss mean- 0.0925]
+==============================
+[Train]_[Elapsed Time - 1:23:54]_[iter - 4000/100000]_[Epoch - 1]_[loss - 0.0807]_[loss mean- 0.0921]
+==============================
+[Train]_[Elapsed Time - 1:26:02]_[iter - 4100/100000]_[Epoch - 1]_[loss - 0.0521]_[loss mean- 0.0915]
+==============================
+[Train]_[Elapsed Time - 1:28:10]_[iter - 4200/100000]_[Epoch - 1]_[loss - 0.0782]_[loss mean- 0.0910]
+==============================
+[Train]_[Elapsed Time - 1:30:18]_[iter - 4300/100000]_[Epoch - 1]_[loss - 0.0573]_[loss mean- 0.0906]
+==============================
+[Train]_[Elapsed Time - 1:32:25]_[iter - 4400/100000]_[Epoch - 1]_[loss - 0.0769]_[loss mean- 0.0901]
+==============================
+[Train]_[Elapsed Time - 1:34:33]_[iter - 4500/100000]_[Epoch - 1]_[loss - 0.0576]_[loss mean- 0.0897]
+==============================
+[Train]_[Elapsed Time - 1:36:41]_[iter - 4600/100000]_[Epoch - 1]_[loss - 0.1191]_[loss mean- 0.0892]
+==============================
+[Train]_[Elapsed Time - 1:38:49]_[iter - 4700/100000]_[Epoch - 1]_[loss - 0.0757]_[loss mean- 0.0887]
+==============================
+[Train]_[Elapsed Time - 1:40:57]_[iter - 4800/100000]_[Epoch - 1]_[loss - 0.0881]_[loss mean- 0.0883]
+==============================
+[Train]_[Elapsed Time - 1:43:05]_[iter - 4900/100000]_[Epoch - 1]_[loss - 0.0791]_[loss mean- 0.0880]
+==============================
+[Train]_[Elapsed Time - 1:45:13]_[iter - 5000/100000]_[Epoch - 1]_[loss - 0.0372]_[loss mean- 0.0877]
+==============================
+[Train]_[Elapsed Time - 1:47:21]_[iter - 5100/100000]_[Epoch - 1]_[loss - 0.0358]_[loss mean- 0.0874]
+==============================
+[Train]_[Elapsed Time - 1:49:29]_[iter - 5200/100000]_[Epoch - 1]_[loss - 0.0943]_[loss mean- 0.0871]
+==============================
+[Train]_[Elapsed Time - 1:51:36]_[iter - 5300/100000]_[Epoch - 1]_[loss - 0.0541]_[loss mean- 0.0868]
+==============================
+[Train]_[Elapsed Time - 1:53:44]_[iter - 5400/100000]_[Epoch - 1]_[loss - 0.0756]_[loss mean- 0.0864]
+==============================
+[Train]_[Elapsed Time - 1:55:52]_[iter - 5500/100000]_[Epoch - 1]_[loss - 0.0725]_[loss mean- 0.0861]
+==============================
+[Train]_[Elapsed Time - 1:58:00]_[iter - 5600/100000]_[Epoch - 1]_[loss - 0.0615]_[loss mean- 0.0858]
+==============================
+[Train]_[Elapsed Time - 2:00:08]_[iter - 5700/100000]_[Epoch - 1]_[loss - 0.0809]_[loss mean- 0.0855]
+==============================
+[Train]_[Elapsed Time - 2:02:16]_[iter - 5800/100000]_[Epoch - 1]_[loss - 0.0772]_[loss mean- 0.0852]
+==============================
+[Train]_[Elapsed Time - 2:04:24]_[iter - 5900/100000]_[Epoch - 1]_[loss - 0.0483]_[loss mean- 0.0850]
+==============================
+[Train]_[Elapsed Time - 2:06:32]_[iter - 6000/100000]_[Epoch - 1]_[loss - 0.0998]_[loss mean- 0.0847]
+==============================
+[Train]_[Elapsed Time - 2:08:40]_[iter - 6100/100000]_[Epoch - 1]_[loss - 0.0374]_[loss mean- 0.0845]
+==============================
+[Train]_[Elapsed Time - 2:10:48]_[iter - 6200/100000]_[Epoch - 1]_[loss - 0.0490]_[loss mean- 0.0842]
+==============================
+[Train]_[Elapsed Time - 2:12:56]_[iter - 6300/100000]_[Epoch - 1]_[loss - 0.0543]_[loss mean- 0.0839]
+==============================
+[Train]_[Elapsed Time - 2:15:04]_[iter - 6400/100000]_[Epoch - 1]_[loss - 0.0436]_[loss mean- 0.0836]
+==============================
+[Train]_[Elapsed Time - 2:17:12]_[iter - 6500/100000]_[Epoch - 1]_[loss - 0.0629]_[loss mean- 0.0833]
+==============================
+[Train]_[Elapsed Time - 2:19:20]_[iter - 6600/100000]_[Epoch - 1]_[loss - 0.0572]_[loss mean- 0.0831]
+==============================
+[Train]_[Elapsed Time - 2:21:28]_[iter - 6700/100000]_[Epoch - 1]_[loss - 0.0999]_[loss mean- 0.0828]
+==============================
+[Train]_[Elapsed Time - 2:23:36]_[iter - 6800/100000]_[Epoch - 1]_[loss - 0.0663]_[loss mean- 0.0826]
+==============================
+[Train]_[Elapsed Time - 2:25:44]_[iter - 6900/100000]_[Epoch - 1]_[loss - 0.0647]_[loss mean- 0.0824]
+==============================
+[Train]_[Elapsed Time - 2:27:51]_[iter - 7000/100000]_[Epoch - 1]_[loss - 0.2194]_[loss mean- 0.0823]
+==============================
+[Train]_[Elapsed Time - 2:29:59]_[iter - 7100/100000]_[Epoch - 1]_[loss - 0.0279]_[loss mean- 0.0821]
+==============================
+[Train]_[Elapsed Time - 2:32:07]_[iter - 7200/100000]_[Epoch - 1]_[loss - 0.0595]_[loss mean- 0.0819]
+==============================
+[Train]_[Elapsed Time - 2:34:15]_[iter - 7300/100000]_[Epoch - 1]_[loss - 0.0676]_[loss mean- 0.0817]
+==============================
+[Train]_[Elapsed Time - 2:36:23]_[iter - 7400/100000]_[Epoch - 1]_[loss - 0.0631]_[loss mean- 0.0815]
+==============================
+[Train]_[Elapsed Time - 2:38:31]_[iter - 7500/100000]_[Epoch - 1]_[loss - 0.0781]_[loss mean- 0.0813]
+==============================
+[Train]_[Elapsed Time - 2:40:39]_[iter - 7600/100000]_[Epoch - 1]_[loss - 0.0492]_[loss mean- 0.0812]
+==============================
+[Train]_[Elapsed Time - 2:42:47]_[iter - 7700/100000]_[Epoch - 1]_[loss - 0.0958]_[loss mean- 0.0810]
+==============================
+[Train]_[Elapsed Time - 2:44:55]_[iter - 7800/100000]_[Epoch - 1]_[loss - 0.1217]_[loss mean- 0.0808]
+==============================
+[Train]_[Elapsed Time - 2:47:03]_[iter - 7900/100000]_[Epoch - 2]_[loss - 0.0354]_[loss mean- 0.0718]
+==============================
+[Train]_[Elapsed Time - 2:49:11]_[iter - 8000/100000]_[Epoch - 2]_[loss - 0.0496]_[loss mean- 0.0704]
+==============================
+[Train]_[Elapsed Time - 2:51:19]_[iter - 8100/100000]_[Epoch - 2]_[loss - 0.0810]_[loss mean- 0.0691]
+==============================
+[Train]_[Elapsed Time - 2:53:27]_[iter - 8200/100000]_[Epoch - 2]_[loss - 0.0380]_[loss mean- 0.0681]
+==============================
+[Train]_[Elapsed Time - 2:55:35]_[iter - 8300/100000]_[Epoch - 2]_[loss - 0.0454]_[loss mean- 0.0677]
+==============================
+[Train]_[Elapsed Time - 2:57:43]_[iter - 8400/100000]_[Epoch - 2]_[loss - 0.0699]_[loss mean- 0.0673]
+==============================
+[Train]_[Elapsed Time - 2:59:51]_[iter - 8500/100000]_[Epoch - 2]_[loss - 0.0447]_[loss mean- 0.0666]
+==============================
+[Train]_[Elapsed Time - 3:01:59]_[iter - 8600/100000]_[Epoch - 2]_[loss - 0.0832]_[loss mean- 0.0661]
+==============================
+[Train]_[Elapsed Time - 3:04:07]_[iter - 8700/100000]_[Epoch - 2]_[loss - 0.0528]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 3:06:15]_[iter - 8800/100000]_[Epoch - 2]_[loss - 0.0756]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 3:08:23]_[iter - 8900/100000]_[Epoch - 2]_[loss - 0.0394]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:10:31]_[iter - 9000/100000]_[Epoch - 2]_[loss - 0.0411]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 3:12:39]_[iter - 9100/100000]_[Epoch - 2]_[loss - 0.0506]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 3:14:47]_[iter - 9200/100000]_[Epoch - 2]_[loss - 0.0949]_[loss mean- 0.0651]
+==============================
+[Train]_[Elapsed Time - 3:16:55]_[iter - 9300/100000]_[Epoch - 2]_[loss - 0.0458]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 3:19:03]_[iter - 9400/100000]_[Epoch - 2]_[loss - 0.0838]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 3:21:11]_[iter - 9500/100000]_[Epoch - 2]_[loss - 0.0877]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 3:23:19]_[iter - 9600/100000]_[Epoch - 2]_[loss - 0.0347]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 3:25:27]_[iter - 9700/100000]_[Epoch - 2]_[loss - 0.0404]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:27:35]_[iter - 9800/100000]_[Epoch - 2]_[loss - 0.0834]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 3:29:43]_[iter - 9900/100000]_[Epoch - 2]_[loss - 0.0666]_[loss mean- 0.0658]
+==============================
+[Train]_[Elapsed Time - 3:31:51]_[iter - 10000/100000]_[Epoch - 2]_[loss - 0.0753]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 3:33:59]_[iter - 10100/100000]_[Epoch - 2]_[loss - 0.0940]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 3:36:07]_[iter - 10200/100000]_[Epoch - 2]_[loss - 0.0481]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 3:38:15]_[iter - 10300/100000]_[Epoch - 2]_[loss - 0.0514]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:40:23]_[iter - 10400/100000]_[Epoch - 2]_[loss - 0.0290]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:42:31]_[iter - 10500/100000]_[Epoch - 2]_[loss - 0.0789]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 3:44:39]_[iter - 10600/100000]_[Epoch - 2]_[loss - 0.0303]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 3:46:47]_[iter - 10700/100000]_[Epoch - 2]_[loss - 0.0759]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 3:48:55]_[iter - 10800/100000]_[Epoch - 2]_[loss - 0.0937]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:51:03]_[iter - 10900/100000]_[Epoch - 2]_[loss - 0.0521]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:53:11]_[iter - 11000/100000]_[Epoch - 2]_[loss - 0.0758]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 3:55:19]_[iter - 11100/100000]_[Epoch - 2]_[loss - 0.0699]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 3:57:27]_[iter - 11200/100000]_[Epoch - 2]_[loss - 0.0421]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 3:59:35]_[iter - 11300/100000]_[Epoch - 2]_[loss - 0.0459]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:01:43]_[iter - 11400/100000]_[Epoch - 2]_[loss - 0.0773]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:03:51]_[iter - 11500/100000]_[Epoch - 2]_[loss - 0.0595]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:05:59]_[iter - 11600/100000]_[Epoch - 2]_[loss - 0.0132]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:08:07]_[iter - 11700/100000]_[Epoch - 2]_[loss - 0.0822]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 4:10:15]_[iter - 11800/100000]_[Epoch - 2]_[loss - 0.0404]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:12:23]_[iter - 11900/100000]_[Epoch - 2]_[loss - 0.0801]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:14:31]_[iter - 12000/100000]_[Epoch - 2]_[loss - 0.0832]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:16:39]_[iter - 12100/100000]_[Epoch - 2]_[loss - 0.1650]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 4:18:47]_[iter - 12200/100000]_[Epoch - 2]_[loss - 0.1252]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 4:20:55]_[iter - 12300/100000]_[Epoch - 2]_[loss - 0.0671]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 4:23:03]_[iter - 12400/100000]_[Epoch - 2]_[loss - 0.0778]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:25:11]_[iter - 12500/100000]_[Epoch - 2]_[loss - 0.0784]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:27:19]_[iter - 12600/100000]_[Epoch - 2]_[loss - 0.0594]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 4:29:27]_[iter - 12700/100000]_[Epoch - 2]_[loss - 0.0366]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:31:35]_[iter - 12800/100000]_[Epoch - 2]_[loss - 0.0409]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:33:43]_[iter - 12900/100000]_[Epoch - 2]_[loss - 0.0379]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:35:51]_[iter - 13000/100000]_[Epoch - 2]_[loss - 0.1426]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:37:59]_[iter - 13100/100000]_[Epoch - 2]_[loss - 0.0504]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:40:07]_[iter - 13200/100000]_[Epoch - 2]_[loss - 0.0311]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:42:15]_[iter - 13300/100000]_[Epoch - 2]_[loss - 0.1021]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:44:23]_[iter - 13400/100000]_[Epoch - 2]_[loss - 0.1019]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:46:31]_[iter - 13500/100000]_[Epoch - 2]_[loss - 0.0499]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:48:39]_[iter - 13600/100000]_[Epoch - 2]_[loss - 0.0718]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:50:47]_[iter - 13700/100000]_[Epoch - 2]_[loss - 0.0345]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:52:55]_[iter - 13800/100000]_[Epoch - 2]_[loss - 0.0447]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:55:03]_[iter - 13900/100000]_[Epoch - 2]_[loss - 0.0491]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:57:11]_[iter - 14000/100000]_[Epoch - 2]_[loss - 0.0503]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 4:59:19]_[iter - 14100/100000]_[Epoch - 2]_[loss - 0.0475]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:01:27]_[iter - 14200/100000]_[Epoch - 2]_[loss - 0.1096]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 5:03:35]_[iter - 14300/100000]_[Epoch - 2]_[loss - 0.0359]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 5:05:44]_[iter - 14400/100000]_[Epoch - 2]_[loss - 0.0759]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:07:52]_[iter - 14500/100000]_[Epoch - 2]_[loss - 0.0773]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 5:10:00]_[iter - 14600/100000]_[Epoch - 2]_[loss - 0.0543]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 5:12:08]_[iter - 14700/100000]_[Epoch - 2]_[loss - 0.0596]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:14:16]_[iter - 14800/100000]_[Epoch - 2]_[loss - 0.0535]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:16:24]_[iter - 14900/100000]_[Epoch - 2]_[loss - 0.0513]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:18:32]_[iter - 15000/100000]_[Epoch - 2]_[loss - 0.0278]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:20:40]_[iter - 15100/100000]_[Epoch - 2]_[loss - 0.1099]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:22:48]_[iter - 15200/100000]_[Epoch - 2]_[loss - 0.0332]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:24:57]_[iter - 15300/100000]_[Epoch - 2]_[loss - 0.0585]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 5:27:05]_[iter - 15400/100000]_[Epoch - 2]_[loss - 0.0348]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 5:29:13]_[iter - 15500/100000]_[Epoch - 2]_[loss - 0.0968]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:31:21]_[iter - 15600/100000]_[Epoch - 2]_[loss - 0.0482]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:33:29]_[iter - 15700/100000]_[Epoch - 2]_[loss - 0.0294]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 5:35:38]_[iter - 15800/100000]_[Epoch - 3]_[loss - 0.0432]_[loss mean- 0.0730]
+==============================
+[Train]_[Elapsed Time - 5:37:46]_[iter - 15900/100000]_[Epoch - 3]_[loss - 0.0457]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 5:39:54]_[iter - 16000/100000]_[Epoch - 3]_[loss - 0.0244]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 5:42:02]_[iter - 16100/100000]_[Epoch - 3]_[loss - 0.0924]_[loss mean- 0.0640]
+==============================
+[Train]_[Elapsed Time - 5:44:10]_[iter - 16200/100000]_[Epoch - 3]_[loss - 0.0258]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 5:46:18]_[iter - 16300/100000]_[Epoch - 3]_[loss - 0.0850]_[loss mean- 0.0648]
+==============================
+[Train]_[Elapsed Time - 5:48:26]_[iter - 16400/100000]_[Epoch - 3]_[loss - 0.0672]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 5:50:34]_[iter - 16500/100000]_[Epoch - 3]_[loss - 0.0901]_[loss mean- 0.0660]
+==============================
+[Train]_[Elapsed Time - 5:52:42]_[iter - 16600/100000]_[Epoch - 3]_[loss - 0.0646]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 5:54:50]_[iter - 16700/100000]_[Epoch - 3]_[loss - 0.0334]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 5:56:58]_[iter - 16800/100000]_[Epoch - 3]_[loss - 0.0341]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 5:59:06]_[iter - 16900/100000]_[Epoch - 3]_[loss - 0.0781]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 6:01:14]_[iter - 17000/100000]_[Epoch - 3]_[loss - 0.0346]_[loss mean- 0.0660]
+==============================
+[Train]_[Elapsed Time - 6:03:22]_[iter - 17100/100000]_[Epoch - 3]_[loss - 0.0852]_[loss mean- 0.0660]
+==============================
+[Train]_[Elapsed Time - 6:05:30]_[iter - 17200/100000]_[Epoch - 3]_[loss - 0.0343]_[loss mean- 0.0658]
+==============================
+[Train]_[Elapsed Time - 6:07:38]_[iter - 17300/100000]_[Epoch - 3]_[loss - 0.0564]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 6:09:47]_[iter - 17400/100000]_[Epoch - 3]_[loss - 0.0566]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 6:11:55]_[iter - 17500/100000]_[Epoch - 3]_[loss - 0.0355]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 6:14:03]_[iter - 17600/100000]_[Epoch - 3]_[loss - 0.0500]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 6:16:11]_[iter - 17700/100000]_[Epoch - 3]_[loss - 0.0979]_[loss mean- 0.0657]
+==============================
+[Train]_[Elapsed Time - 6:18:18]_[iter - 17800/100000]_[Epoch - 3]_[loss - 0.0346]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 6:20:26]_[iter - 17900/100000]_[Epoch - 3]_[loss - 0.0750]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 6:22:34]_[iter - 18000/100000]_[Epoch - 3]_[loss - 0.0483]_[loss mean- 0.0656]
+==============================
+[Train]_[Elapsed Time - 6:24:43]_[iter - 18100/100000]_[Epoch - 3]_[loss - 0.0377]_[loss mean- 0.0655]
+==============================
+[Train]_[Elapsed Time - 6:26:51]_[iter - 18200/100000]_[Epoch - 3]_[loss - 0.0226]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 6:28:59]_[iter - 18300/100000]_[Epoch - 3]_[loss - 0.0351]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 6:31:07]_[iter - 18400/100000]_[Epoch - 3]_[loss - 0.0381]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 6:33:15]_[iter - 18500/100000]_[Epoch - 3]_[loss - 0.0503]_[loss mean- 0.0651]
+==============================
+[Train]_[Elapsed Time - 6:35:23]_[iter - 18600/100000]_[Epoch - 3]_[loss - 0.0759]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 6:37:31]_[iter - 18700/100000]_[Epoch - 3]_[loss - 0.0871]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 6:39:39]_[iter - 18800/100000]_[Epoch - 3]_[loss - 0.0232]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 6:41:47]_[iter - 18900/100000]_[Epoch - 3]_[loss - 0.0487]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 6:43:55]_[iter - 19000/100000]_[Epoch - 3]_[loss - 0.0614]_[loss mean- 0.0653]
+==============================
+[Train]_[Elapsed Time - 6:46:03]_[iter - 19100/100000]_[Epoch - 3]_[loss - 0.0731]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 6:48:11]_[iter - 19200/100000]_[Epoch - 3]_[loss - 0.0409]_[loss mean- 0.0654]
+==============================
+[Train]_[Elapsed Time - 6:50:19]_[iter - 19300/100000]_[Epoch - 3]_[loss - 0.0488]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 6:52:27]_[iter - 19400/100000]_[Epoch - 3]_[loss - 0.0634]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 6:54:35]_[iter - 19500/100000]_[Epoch - 3]_[loss - 0.0567]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 6:56:43]_[iter - 19600/100000]_[Epoch - 3]_[loss - 0.1206]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 6:58:51]_[iter - 19700/100000]_[Epoch - 3]_[loss - 0.0460]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 7:01:00]_[iter - 19800/100000]_[Epoch - 3]_[loss - 0.0679]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 7:03:07]_[iter - 19900/100000]_[Epoch - 3]_[loss - 0.0698]_[loss mean- 0.0652]
+==============================
+[Train]_[Elapsed Time - 7:05:15]_[iter - 20000/100000]_[Epoch - 3]_[loss - 0.0325]_[loss mean- 0.0651]
+==============================
+[Train]_[Elapsed Time - 7:07:24]_[iter - 20100/100000]_[Epoch - 3]_[loss - 0.1201]_[loss mean- 0.0651]
+==============================
+[Train]_[Elapsed Time - 7:09:32]_[iter - 20200/100000]_[Epoch - 3]_[loss - 0.0415]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:11:40]_[iter - 20300/100000]_[Epoch - 3]_[loss - 0.0845]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:13:48]_[iter - 20400/100000]_[Epoch - 3]_[loss - 0.0504]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:15:56]_[iter - 20500/100000]_[Epoch - 3]_[loss - 0.0348]_[loss mean- 0.0650]
+==============================
+[Train]_[Elapsed Time - 7:18:04]_[iter - 20600/100000]_[Epoch - 3]_[loss - 0.1086]_[loss mean- 0.0650]
+==============================
+[Train]_[Elapsed Time - 7:20:12]_[iter - 20700/100000]_[Epoch - 3]_[loss - 0.0475]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:22:20]_[iter - 20800/100000]_[Epoch - 3]_[loss - 0.0657]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:24:28]_[iter - 20900/100000]_[Epoch - 3]_[loss - 0.0993]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:26:36]_[iter - 21000/100000]_[Epoch - 3]_[loss - 0.0568]_[loss mean- 0.0650]
+==============================
+[Train]_[Elapsed Time - 7:28:44]_[iter - 21100/100000]_[Epoch - 3]_[loss - 0.0273]_[loss mean- 0.0649]
+==============================
+[Train]_[Elapsed Time - 7:30:52]_[iter - 21200/100000]_[Epoch - 3]_[loss - 0.0635]_[loss mean- 0.0648]
+==============================
+[Train]_[Elapsed Time - 7:33:01]_[iter - 21300/100000]_[Epoch - 3]_[loss - 0.0857]_[loss mean- 0.0648]
+==============================
+[Train]_[Elapsed Time - 7:35:09]_[iter - 21400/100000]_[Epoch - 3]_[loss - 0.0803]_[loss mean- 0.0647]
+==============================
+[Train]_[Elapsed Time - 7:37:17]_[iter - 21500/100000]_[Epoch - 3]_[loss - 0.0843]_[loss mean- 0.0647]
+==============================
+[Train]_[Elapsed Time - 7:39:25]_[iter - 21600/100000]_[Epoch - 3]_[loss - 0.0350]_[loss mean- 0.0647]
+==============================
+[Train]_[Elapsed Time - 7:41:33]_[iter - 21700/100000]_[Epoch - 3]_[loss - 0.0448]_[loss mean- 0.0647]
+==============================
+[Train]_[Elapsed Time - 7:43:41]_[iter - 21800/100000]_[Epoch - 3]_[loss - 0.0383]_[loss mean- 0.0646]
+==============================
+[Train]_[Elapsed Time - 7:45:49]_[iter - 21900/100000]_[Epoch - 3]_[loss - 0.0763]_[loss mean- 0.0646]
+==============================
+[Train]_[Elapsed Time - 7:47:57]_[iter - 22000/100000]_[Epoch - 3]_[loss - 0.0581]_[loss mean- 0.0646]
+==============================
+[Train]_[Elapsed Time - 7:50:05]_[iter - 22100/100000]_[Epoch - 3]_[loss - 0.1002]_[loss mean- 0.0645]
+==============================
+[Train]_[Elapsed Time - 7:52:13]_[iter - 22200/100000]_[Epoch - 3]_[loss - 0.0371]_[loss mean- 0.0645]
+==============================
+[Train]_[Elapsed Time - 7:54:21]_[iter - 22300/100000]_[Epoch - 3]_[loss - 0.0691]_[loss mean- 0.0644]
+==============================
+[Train]_[Elapsed Time - 7:56:30]_[iter - 22400/100000]_[Epoch - 3]_[loss - 0.1065]_[loss mean- 0.0645]
+==============================
+[Train]_[Elapsed Time - 7:58:38]_[iter - 22500/100000]_[Epoch - 3]_[loss - 0.0713]_[loss mean- 0.0645]
+==============================
+[Train]_[Elapsed Time - 8:00:46]_[iter - 22600/100000]_[Epoch - 3]_[loss - 0.0517]_[loss mean- 0.0644]
+==============================
+[Train]_[Elapsed Time - 8:02:54]_[iter - 22700/100000]_[Epoch - 3]_[loss - 0.0748]_[loss mean- 0.0644]
+==============================
+[Train]_[Elapsed Time - 8:05:02]_[iter - 22800/100000]_[Epoch - 3]_[loss - 0.0324]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:07:10]_[iter - 22900/100000]_[Epoch - 3]_[loss - 0.0816]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:09:18]_[iter - 23000/100000]_[Epoch - 3]_[loss - 0.0610]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:11:26]_[iter - 23100/100000]_[Epoch - 3]_[loss - 0.0369]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:13:34]_[iter - 23200/100000]_[Epoch - 3]_[loss - 0.0473]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:15:42]_[iter - 23300/100000]_[Epoch - 3]_[loss - 0.0635]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:17:50]_[iter - 23400/100000]_[Epoch - 3]_[loss - 0.0713]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:19:59]_[iter - 23500/100000]_[Epoch - 3]_[loss - 0.0390]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:22:07]_[iter - 23600/100000]_[Epoch - 3]_[loss - 0.0433]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 8:24:16]_[iter - 23700/100000]_[Epoch - 4]_[loss - 0.0403]_[loss mean- 0.0538]
+==============================
+[Train]_[Elapsed Time - 8:26:24]_[iter - 23800/100000]_[Epoch - 4]_[loss - 0.1695]_[loss mean- 0.0582]
+==============================
+[Train]_[Elapsed Time - 8:28:32]_[iter - 23900/100000]_[Epoch - 4]_[loss - 0.0809]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 8:30:40]_[iter - 24000/100000]_[Epoch - 4]_[loss - 0.0192]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 8:32:48]_[iter - 24100/100000]_[Epoch - 4]_[loss - 0.0718]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 8:34:56]_[iter - 24200/100000]_[Epoch - 4]_[loss - 0.0524]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 8:37:04]_[iter - 24300/100000]_[Epoch - 4]_[loss - 0.0435]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 8:39:12]_[iter - 24400/100000]_[Epoch - 4]_[loss - 0.0567]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 8:41:20]_[iter - 24500/100000]_[Epoch - 4]_[loss - 0.0952]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 8:43:28]_[iter - 24600/100000]_[Epoch - 4]_[loss - 0.0544]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 8:45:36]_[iter - 24700/100000]_[Epoch - 4]_[loss - 0.0522]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 8:47:44]_[iter - 24800/100000]_[Epoch - 4]_[loss - 0.0642]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 8:49:52]_[iter - 24900/100000]_[Epoch - 4]_[loss - 0.1304]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 8:52:00]_[iter - 25000/100000]_[Epoch - 4]_[loss - 0.0628]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 8:54:09]_[iter - 25100/100000]_[Epoch - 4]_[loss - 0.0586]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 8:56:17]_[iter - 25200/100000]_[Epoch - 4]_[loss - 0.0623]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 8:58:25]_[iter - 25300/100000]_[Epoch - 4]_[loss - 0.0476]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 9:00:33]_[iter - 25400/100000]_[Epoch - 4]_[loss - 0.1066]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 9:02:41]_[iter - 25500/100000]_[Epoch - 4]_[loss - 0.0724]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 9:04:49]_[iter - 25600/100000]_[Epoch - 4]_[loss - 0.0376]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:06:57]_[iter - 25700/100000]_[Epoch - 4]_[loss - 0.0731]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 9:09:05]_[iter - 25800/100000]_[Epoch - 4]_[loss - 0.0802]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 9:11:13]_[iter - 25900/100000]_[Epoch - 4]_[loss - 0.0778]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:13:21]_[iter - 26000/100000]_[Epoch - 4]_[loss - 0.0227]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:15:29]_[iter - 26100/100000]_[Epoch - 4]_[loss - 0.0479]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:17:37]_[iter - 26200/100000]_[Epoch - 4]_[loss - 0.0532]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:19:45]_[iter - 26300/100000]_[Epoch - 4]_[loss - 0.1097]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 9:21:53]_[iter - 26400/100000]_[Epoch - 4]_[loss - 0.0311]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 9:24:01]_[iter - 26500/100000]_[Epoch - 4]_[loss - 0.0285]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 9:26:10]_[iter - 26600/100000]_[Epoch - 4]_[loss - 0.1058]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:28:18]_[iter - 26700/100000]_[Epoch - 4]_[loss - 0.0497]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 9:30:26]_[iter - 26800/100000]_[Epoch - 4]_[loss - 0.0637]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 9:32:34]_[iter - 26900/100000]_[Epoch - 4]_[loss - 0.0402]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 9:34:42]_[iter - 27000/100000]_[Epoch - 4]_[loss - 0.0413]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 9:36:50]_[iter - 27100/100000]_[Epoch - 4]_[loss - 0.0301]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 9:38:58]_[iter - 27200/100000]_[Epoch - 4]_[loss - 0.0460]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 9:41:06]_[iter - 27300/100000]_[Epoch - 4]_[loss - 0.0791]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 9:43:15]_[iter - 27400/100000]_[Epoch - 4]_[loss - 0.0689]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 9:45:22]_[iter - 27500/100000]_[Epoch - 4]_[loss - 0.0870]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 9:47:30]_[iter - 27600/100000]_[Epoch - 4]_[loss - 0.0493]_[loss mean- 0.0639]
+==============================
+[Train]_[Elapsed Time - 9:49:38]_[iter - 27700/100000]_[Epoch - 4]_[loss - 0.1032]_[loss mean- 0.0639]
+==============================
+[Train]_[Elapsed Time - 9:51:47]_[iter - 27800/100000]_[Epoch - 4]_[loss - 0.0247]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 9:53:55]_[iter - 27900/100000]_[Epoch - 4]_[loss - 0.0791]_[loss mean- 0.0639]
+==============================
+[Train]_[Elapsed Time - 9:56:03]_[iter - 28000/100000]_[Epoch - 4]_[loss - 0.0439]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 9:58:11]_[iter - 28100/100000]_[Epoch - 4]_[loss - 0.0826]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:00:19]_[iter - 28200/100000]_[Epoch - 4]_[loss - 0.0728]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:02:27]_[iter - 28300/100000]_[Epoch - 4]_[loss - 0.1001]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:04:36]_[iter - 28400/100000]_[Epoch - 4]_[loss - 0.0590]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:06:44]_[iter - 28500/100000]_[Epoch - 4]_[loss - 0.0815]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:08:52]_[iter - 28600/100000]_[Epoch - 4]_[loss - 0.0792]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:11:00]_[iter - 28700/100000]_[Epoch - 4]_[loss - 0.0367]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:13:08]_[iter - 28800/100000]_[Epoch - 4]_[loss - 0.0739]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:15:16]_[iter - 28900/100000]_[Epoch - 4]_[loss - 0.0588]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:17:24]_[iter - 29000/100000]_[Epoch - 4]_[loss - 0.0785]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 10:19:32]_[iter - 29100/100000]_[Epoch - 4]_[loss - 0.0673]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:21:40]_[iter - 29200/100000]_[Epoch - 4]_[loss - 0.0599]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:23:49]_[iter - 29300/100000]_[Epoch - 4]_[loss - 0.0337]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:25:57]_[iter - 29400/100000]_[Epoch - 4]_[loss - 0.0758]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:28:05]_[iter - 29500/100000]_[Epoch - 4]_[loss - 0.0705]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:30:13]_[iter - 29600/100000]_[Epoch - 4]_[loss - 0.0566]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 10:32:21]_[iter - 29700/100000]_[Epoch - 4]_[loss - 0.0448]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 10:34:29]_[iter - 29800/100000]_[Epoch - 4]_[loss - 0.1210]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:36:37]_[iter - 29900/100000]_[Epoch - 4]_[loss - 0.1116]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:38:45]_[iter - 30000/100000]_[Epoch - 4]_[loss - 0.0675]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:40:53]_[iter - 30100/100000]_[Epoch - 4]_[loss - 0.0576]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:43:01]_[iter - 30200/100000]_[Epoch - 4]_[loss - 0.0523]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:45:09]_[iter - 30300/100000]_[Epoch - 4]_[loss - 0.0735]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:47:17]_[iter - 30400/100000]_[Epoch - 4]_[loss - 0.0577]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:49:25]_[iter - 30500/100000]_[Epoch - 4]_[loss - 0.0357]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:51:33]_[iter - 30600/100000]_[Epoch - 4]_[loss - 0.0386]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:53:41]_[iter - 30700/100000]_[Epoch - 4]_[loss - 0.0549]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 10:55:49]_[iter - 30800/100000]_[Epoch - 4]_[loss - 0.0726]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 10:57:57]_[iter - 30900/100000]_[Epoch - 4]_[loss - 0.1008]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 11:00:05]_[iter - 31000/100000]_[Epoch - 4]_[loss - 0.0337]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 11:02:13]_[iter - 31100/100000]_[Epoch - 4]_[loss - 0.0435]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 11:04:21]_[iter - 31200/100000]_[Epoch - 4]_[loss - 0.0788]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 11:06:29]_[iter - 31300/100000]_[Epoch - 4]_[loss - 0.0389]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 11:08:38]_[iter - 31400/100000]_[Epoch - 4]_[loss - 0.0607]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 11:10:46]_[iter - 31500/100000]_[Epoch - 4]_[loss - 0.0923]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:12:54]_[iter - 31600/100000]_[Epoch - 5]_[loss - 0.0776]_[loss mean- 0.0691]
+==============================
+[Train]_[Elapsed Time - 11:15:02]_[iter - 31700/100000]_[Epoch - 5]_[loss - 0.0466]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 11:17:10]_[iter - 31800/100000]_[Epoch - 5]_[loss - 0.0767]_[loss mean- 0.0641]
+==============================
+[Train]_[Elapsed Time - 11:19:18]_[iter - 31900/100000]_[Epoch - 5]_[loss - 0.0373]_[loss mean- 0.0651]
+==============================
+[Train]_[Elapsed Time - 11:21:26]_[iter - 32000/100000]_[Epoch - 5]_[loss - 0.0812]_[loss mean- 0.0641]
+==============================
+[Train]_[Elapsed Time - 11:23:34]_[iter - 32100/100000]_[Epoch - 5]_[loss - 0.0572]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 11:25:42]_[iter - 32200/100000]_[Epoch - 5]_[loss - 0.0693]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 11:27:50]_[iter - 32300/100000]_[Epoch - 5]_[loss - 0.0437]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:29:59]_[iter - 32400/100000]_[Epoch - 5]_[loss - 0.0778]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 11:32:07]_[iter - 32500/100000]_[Epoch - 5]_[loss - 0.0686]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 11:34:15]_[iter - 32600/100000]_[Epoch - 5]_[loss - 0.0245]_[loss mean- 0.0639]
+==============================
+[Train]_[Elapsed Time - 11:36:23]_[iter - 32700/100000]_[Epoch - 5]_[loss - 0.0869]_[loss mean- 0.0639]
+==============================
+[Train]_[Elapsed Time - 11:38:31]_[iter - 32800/100000]_[Epoch - 5]_[loss - 0.0776]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:40:39]_[iter - 32900/100000]_[Epoch - 5]_[loss - 0.0309]_[loss mean- 0.0637]
+==============================
+[Train]_[Elapsed Time - 11:42:47]_[iter - 33000/100000]_[Epoch - 5]_[loss - 0.0433]_[loss mean- 0.0639]
+==============================
+[Train]_[Elapsed Time - 11:44:55]_[iter - 33100/100000]_[Epoch - 5]_[loss - 0.0301]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:47:03]_[iter - 33200/100000]_[Epoch - 5]_[loss - 0.0514]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 11:49:11]_[iter - 33300/100000]_[Epoch - 5]_[loss - 0.0568]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 11:51:19]_[iter - 33400/100000]_[Epoch - 5]_[loss - 0.0906]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:53:27]_[iter - 33500/100000]_[Epoch - 5]_[loss - 0.0671]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:55:35]_[iter - 33600/100000]_[Epoch - 5]_[loss - 0.0330]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 11:57:43]_[iter - 33700/100000]_[Epoch - 5]_[loss - 0.0780]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 11:59:52]_[iter - 33800/100000]_[Epoch - 5]_[loss - 0.0731]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 12:02:00]_[iter - 33900/100000]_[Epoch - 5]_[loss - 0.0219]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 12:04:08]_[iter - 34000/100000]_[Epoch - 5]_[loss - 0.0658]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 12:06:16]_[iter - 34100/100000]_[Epoch - 5]_[loss - 0.0515]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 12:08:24]_[iter - 34200/100000]_[Epoch - 5]_[loss - 0.0842]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 12:10:32]_[iter - 34300/100000]_[Epoch - 5]_[loss - 0.0539]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:12:40]_[iter - 34400/100000]_[Epoch - 5]_[loss - 0.0790]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:14:48]_[iter - 34500/100000]_[Epoch - 5]_[loss - 0.0433]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 12:16:56]_[iter - 34600/100000]_[Epoch - 5]_[loss - 0.0931]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:19:05]_[iter - 34700/100000]_[Epoch - 5]_[loss - 0.0382]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:21:13]_[iter - 34800/100000]_[Epoch - 5]_[loss - 0.0388]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 12:23:21]_[iter - 34900/100000]_[Epoch - 5]_[loss - 0.0941]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:25:29]_[iter - 35000/100000]_[Epoch - 5]_[loss - 0.1022]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:27:37]_[iter - 35100/100000]_[Epoch - 5]_[loss - 0.0985]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:29:45]_[iter - 35200/100000]_[Epoch - 5]_[loss - 0.0788]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:31:54]_[iter - 35300/100000]_[Epoch - 5]_[loss - 0.0232]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:34:02]_[iter - 35400/100000]_[Epoch - 5]_[loss - 0.0676]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 12:36:10]_[iter - 35500/100000]_[Epoch - 5]_[loss - 0.0490]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 12:38:18]_[iter - 35600/100000]_[Epoch - 5]_[loss - 0.0667]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 12:40:26]_[iter - 35700/100000]_[Epoch - 5]_[loss - 0.0434]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 12:42:34]_[iter - 35800/100000]_[Epoch - 5]_[loss - 0.0326]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:44:42]_[iter - 35900/100000]_[Epoch - 5]_[loss - 0.0744]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 12:46:50]_[iter - 36000/100000]_[Epoch - 5]_[loss - 0.0407]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 12:48:58]_[iter - 36100/100000]_[Epoch - 5]_[loss - 0.0752]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 12:51:06]_[iter - 36200/100000]_[Epoch - 5]_[loss - 0.0737]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:53:14]_[iter - 36300/100000]_[Epoch - 5]_[loss - 0.0383]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:55:23]_[iter - 36400/100000]_[Epoch - 5]_[loss - 0.0442]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 12:57:31]_[iter - 36500/100000]_[Epoch - 5]_[loss - 0.0638]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 12:59:39]_[iter - 36600/100000]_[Epoch - 5]_[loss - 0.1134]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:01:47]_[iter - 36700/100000]_[Epoch - 5]_[loss - 0.0380]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:03:55]_[iter - 36800/100000]_[Epoch - 5]_[loss - 0.0398]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:06:03]_[iter - 36900/100000]_[Epoch - 5]_[loss - 0.1061]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:08:11]_[iter - 37000/100000]_[Epoch - 5]_[loss - 0.1139]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:10:19]_[iter - 37100/100000]_[Epoch - 5]_[loss - 0.0506]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:12:27]_[iter - 37200/100000]_[Epoch - 5]_[loss - 0.0634]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:14:35]_[iter - 37300/100000]_[Epoch - 5]_[loss - 0.0380]_[loss mean- 0.0630]
+==============================
+[Train]_[Elapsed Time - 13:16:43]_[iter - 37400/100000]_[Epoch - 5]_[loss - 0.1063]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:18:51]_[iter - 37500/100000]_[Epoch - 5]_[loss - 0.0407]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:20:59]_[iter - 37600/100000]_[Epoch - 5]_[loss - 0.0659]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:23:07]_[iter - 37700/100000]_[Epoch - 5]_[loss - 0.0590]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:25:15]_[iter - 37800/100000]_[Epoch - 5]_[loss - 0.0261]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:27:23]_[iter - 37900/100000]_[Epoch - 5]_[loss - 0.0456]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:29:31]_[iter - 38000/100000]_[Epoch - 5]_[loss - 0.0635]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 13:31:39]_[iter - 38100/100000]_[Epoch - 5]_[loss - 0.1319]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 13:33:47]_[iter - 38200/100000]_[Epoch - 5]_[loss - 0.0708]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:35:55]_[iter - 38300/100000]_[Epoch - 5]_[loss - 0.1298]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:38:03]_[iter - 38400/100000]_[Epoch - 5]_[loss - 0.0704]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:40:11]_[iter - 38500/100000]_[Epoch - 5]_[loss - 0.0233]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 13:42:19]_[iter - 38600/100000]_[Epoch - 5]_[loss - 0.0565]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:44:27]_[iter - 38700/100000]_[Epoch - 5]_[loss - 0.0845]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:46:35]_[iter - 38800/100000]_[Epoch - 5]_[loss - 0.0739]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:48:43]_[iter - 38900/100000]_[Epoch - 5]_[loss - 0.0670]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:50:51]_[iter - 39000/100000]_[Epoch - 5]_[loss - 0.0555]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:52:59]_[iter - 39100/100000]_[Epoch - 5]_[loss - 0.0714]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:55:07]_[iter - 39200/100000]_[Epoch - 5]_[loss - 0.0828]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 13:57:15]_[iter - 39300/100000]_[Epoch - 5]_[loss - 0.0462]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 13:59:23]_[iter - 39400/100000]_[Epoch - 5]_[loss - 0.0592]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 14:01:32]_[iter - 39500/100000]_[Epoch - 6]_[loss - 0.0434]_[loss mean- 0.0600]
+==============================
+[Train]_[Elapsed Time - 14:03:40]_[iter - 39600/100000]_[Epoch - 6]_[loss - 0.0778]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 14:05:48]_[iter - 39700/100000]_[Epoch - 6]_[loss - 0.0607]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 14:07:55]_[iter - 39800/100000]_[Epoch - 6]_[loss - 0.0639]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 14:10:03]_[iter - 39900/100000]_[Epoch - 6]_[loss - 0.0530]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 14:12:11]_[iter - 40000/100000]_[Epoch - 6]_[loss - 0.0645]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 14:14:20]_[iter - 40100/100000]_[Epoch - 6]_[loss - 0.1002]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 14:16:28]_[iter - 40200/100000]_[Epoch - 6]_[loss - 0.0610]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 14:18:36]_[iter - 40300/100000]_[Epoch - 6]_[loss - 0.0542]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 14:20:44]_[iter - 40400/100000]_[Epoch - 6]_[loss - 0.0585]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 14:22:52]_[iter - 40500/100000]_[Epoch - 6]_[loss - 0.0673]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 14:25:00]_[iter - 40600/100000]_[Epoch - 6]_[loss - 0.0435]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 14:27:08]_[iter - 40700/100000]_[Epoch - 6]_[loss - 0.0944]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 14:29:16]_[iter - 40800/100000]_[Epoch - 6]_[loss - 0.0809]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 14:31:24]_[iter - 40900/100000]_[Epoch - 6]_[loss - 0.0353]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 14:33:32]_[iter - 41000/100000]_[Epoch - 6]_[loss - 0.0496]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 14:35:40]_[iter - 41100/100000]_[Epoch - 6]_[loss - 0.0731]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 14:37:48]_[iter - 41200/100000]_[Epoch - 6]_[loss - 0.0629]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 14:39:56]_[iter - 41300/100000]_[Epoch - 6]_[loss - 0.0605]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 14:42:04]_[iter - 41400/100000]_[Epoch - 6]_[loss - 0.0310]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 14:44:12]_[iter - 41500/100000]_[Epoch - 6]_[loss - 0.0608]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 14:46:20]_[iter - 41600/100000]_[Epoch - 6]_[loss - 0.0955]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 14:48:28]_[iter - 41700/100000]_[Epoch - 6]_[loss - 0.0724]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 14:50:36]_[iter - 41800/100000]_[Epoch - 6]_[loss - 0.0428]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 14:52:44]_[iter - 41900/100000]_[Epoch - 6]_[loss - 0.0587]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 14:54:52]_[iter - 42000/100000]_[Epoch - 6]_[loss - 0.0702]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 14:57:00]_[iter - 42100/100000]_[Epoch - 6]_[loss - 0.0760]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 14:59:08]_[iter - 42200/100000]_[Epoch - 6]_[loss - 0.0770]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 15:01:16]_[iter - 42300/100000]_[Epoch - 6]_[loss - 0.0390]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 15:03:24]_[iter - 42400/100000]_[Epoch - 6]_[loss - 0.0839]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 15:05:32]_[iter - 42500/100000]_[Epoch - 6]_[loss - 0.0312]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 15:07:40]_[iter - 42600/100000]_[Epoch - 6]_[loss - 0.0713]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 15:09:48]_[iter - 42700/100000]_[Epoch - 6]_[loss - 0.0746]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 15:11:56]_[iter - 42800/100000]_[Epoch - 6]_[loss - 0.0487]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 15:14:04]_[iter - 42900/100000]_[Epoch - 6]_[loss - 0.0375]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 15:16:12]_[iter - 43000/100000]_[Epoch - 6]_[loss - 0.0588]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 15:18:20]_[iter - 43100/100000]_[Epoch - 6]_[loss - 0.0589]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 15:20:28]_[iter - 43200/100000]_[Epoch - 6]_[loss - 0.0393]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 15:22:36]_[iter - 43300/100000]_[Epoch - 6]_[loss - 0.0516]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 15:24:44]_[iter - 43400/100000]_[Epoch - 6]_[loss - 0.0305]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 15:26:52]_[iter - 43500/100000]_[Epoch - 6]_[loss - 0.0831]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:29:00]_[iter - 43600/100000]_[Epoch - 6]_[loss - 0.0635]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:31:08]_[iter - 43700/100000]_[Epoch - 6]_[loss - 0.0692]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 15:33:16]_[iter - 43800/100000]_[Epoch - 6]_[loss - 0.0701]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:35:24]_[iter - 43900/100000]_[Epoch - 6]_[loss - 0.0691]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:37:32]_[iter - 44000/100000]_[Epoch - 6]_[loss - 0.0458]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:39:40]_[iter - 44100/100000]_[Epoch - 6]_[loss - 0.0456]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 15:41:47]_[iter - 44200/100000]_[Epoch - 6]_[loss - 0.0464]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 15:43:55]_[iter - 44300/100000]_[Epoch - 6]_[loss - 0.0310]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 15:46:03]_[iter - 44400/100000]_[Epoch - 6]_[loss - 0.0520]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 15:48:11]_[iter - 44500/100000]_[Epoch - 6]_[loss - 0.0654]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 15:50:19]_[iter - 44600/100000]_[Epoch - 6]_[loss - 0.0481]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 15:52:27]_[iter - 44700/100000]_[Epoch - 6]_[loss - 0.0565]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 15:54:35]_[iter - 44800/100000]_[Epoch - 6]_[loss - 0.0314]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:56:43]_[iter - 44900/100000]_[Epoch - 6]_[loss - 0.1291]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 15:58:51]_[iter - 45000/100000]_[Epoch - 6]_[loss - 0.0828]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:00:59]_[iter - 45100/100000]_[Epoch - 6]_[loss - 0.0343]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:03:07]_[iter - 45200/100000]_[Epoch - 6]_[loss - 0.1160]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:05:15]_[iter - 45300/100000]_[Epoch - 6]_[loss - 0.0290]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:07:23]_[iter - 45400/100000]_[Epoch - 6]_[loss - 0.0454]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:09:31]_[iter - 45500/100000]_[Epoch - 6]_[loss - 0.0531]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:11:39]_[iter - 45600/100000]_[Epoch - 6]_[loss - 0.0370]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 16:13:47]_[iter - 45700/100000]_[Epoch - 6]_[loss - 0.0371]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 16:15:55]_[iter - 45800/100000]_[Epoch - 6]_[loss - 0.0891]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 16:18:03]_[iter - 45900/100000]_[Epoch - 6]_[loss - 0.0490]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 16:20:11]_[iter - 46000/100000]_[Epoch - 6]_[loss - 0.0824]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:22:19]_[iter - 46100/100000]_[Epoch - 6]_[loss - 0.0875]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:24:27]_[iter - 46200/100000]_[Epoch - 6]_[loss - 0.0225]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:26:35]_[iter - 46300/100000]_[Epoch - 6]_[loss - 0.0561]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:28:43]_[iter - 46400/100000]_[Epoch - 6]_[loss - 0.1173]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:30:51]_[iter - 46500/100000]_[Epoch - 6]_[loss - 0.0829]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:32:59]_[iter - 46600/100000]_[Epoch - 6]_[loss - 0.0343]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 16:35:07]_[iter - 46700/100000]_[Epoch - 6]_[loss - 0.0507]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:37:15]_[iter - 46800/100000]_[Epoch - 6]_[loss - 0.0553]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:39:24]_[iter - 46900/100000]_[Epoch - 6]_[loss - 0.0479]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:41:32]_[iter - 47000/100000]_[Epoch - 6]_[loss - 0.0552]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 16:43:40]_[iter - 47100/100000]_[Epoch - 6]_[loss - 0.0766]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 16:45:48]_[iter - 47200/100000]_[Epoch - 6]_[loss - 0.0774]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 16:47:56]_[iter - 47300/100000]_[Epoch - 6]_[loss - 0.0935]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 16:50:05]_[iter - 47400/100000]_[Epoch - 7]_[loss - 0.0498]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 16:52:13]_[iter - 47500/100000]_[Epoch - 7]_[loss - 0.0637]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 16:54:21]_[iter - 47600/100000]_[Epoch - 7]_[loss - 0.0447]_[loss mean- 0.0636]
+==============================
+[Train]_[Elapsed Time - 16:56:29]_[iter - 47700/100000]_[Epoch - 7]_[loss - 0.0617]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 16:58:37]_[iter - 47800/100000]_[Epoch - 7]_[loss - 0.0316]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 17:00:45]_[iter - 47900/100000]_[Epoch - 7]_[loss - 0.0604]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 17:02:52]_[iter - 48000/100000]_[Epoch - 7]_[loss - 0.0298]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 17:05:01]_[iter - 48100/100000]_[Epoch - 7]_[loss - 0.1245]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 17:07:09]_[iter - 48200/100000]_[Epoch - 7]_[loss - 0.0461]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 17:09:16]_[iter - 48300/100000]_[Epoch - 7]_[loss - 0.1059]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 17:11:24]_[iter - 48400/100000]_[Epoch - 7]_[loss - 0.0459]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 17:13:32]_[iter - 48500/100000]_[Epoch - 7]_[loss - 0.1312]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 17:15:40]_[iter - 48600/100000]_[Epoch - 7]_[loss - 0.0506]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 17:17:48]_[iter - 48700/100000]_[Epoch - 7]_[loss - 0.0876]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 17:19:56]_[iter - 48800/100000]_[Epoch - 7]_[loss - 0.0584]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 17:22:04]_[iter - 48900/100000]_[Epoch - 7]_[loss - 0.0552]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 17:24:12]_[iter - 49000/100000]_[Epoch - 7]_[loss - 0.0934]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 17:26:20]_[iter - 49100/100000]_[Epoch - 7]_[loss - 0.0637]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 17:28:28]_[iter - 49200/100000]_[Epoch - 7]_[loss - 0.0645]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 17:30:36]_[iter - 49300/100000]_[Epoch - 7]_[loss - 0.0336]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 17:32:44]_[iter - 49400/100000]_[Epoch - 7]_[loss - 0.1035]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 17:34:52]_[iter - 49500/100000]_[Epoch - 7]_[loss - 0.0549]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 17:37:00]_[iter - 49600/100000]_[Epoch - 7]_[loss - 0.0755]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 17:39:08]_[iter - 49700/100000]_[Epoch - 7]_[loss - 0.0995]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 17:41:16]_[iter - 49800/100000]_[Epoch - 7]_[loss - 0.0174]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 17:43:24]_[iter - 49900/100000]_[Epoch - 7]_[loss - 0.0312]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 17:45:32]_[iter - 50000/100000]_[Epoch - 7]_[loss - 0.0629]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 17:47:41]_[iter - 50100/100000]_[Epoch - 7]_[loss - 0.0345]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 17:49:49]_[iter - 50200/100000]_[Epoch - 7]_[loss - 0.0492]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 17:51:57]_[iter - 50300/100000]_[Epoch - 7]_[loss - 0.0676]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 17:54:05]_[iter - 50400/100000]_[Epoch - 7]_[loss - 0.0180]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 17:56:13]_[iter - 50500/100000]_[Epoch - 7]_[loss - 0.0656]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 17:58:21]_[iter - 50600/100000]_[Epoch - 7]_[loss - 0.0683]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 18:00:29]_[iter - 50700/100000]_[Epoch - 7]_[loss - 0.0284]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 18:02:37]_[iter - 50800/100000]_[Epoch - 7]_[loss - 0.0651]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 18:04:45]_[iter - 50900/100000]_[Epoch - 7]_[loss - 0.1171]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 18:06:53]_[iter - 51000/100000]_[Epoch - 7]_[loss - 0.0877]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 18:09:01]_[iter - 51100/100000]_[Epoch - 7]_[loss - 0.0557]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:11:09]_[iter - 51200/100000]_[Epoch - 7]_[loss - 0.0983]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:13:17]_[iter - 51300/100000]_[Epoch - 7]_[loss - 0.0701]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:15:25]_[iter - 51400/100000]_[Epoch - 7]_[loss - 0.0553]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 18:17:33]_[iter - 51500/100000]_[Epoch - 7]_[loss - 0.1199]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:19:41]_[iter - 51600/100000]_[Epoch - 7]_[loss - 0.0626]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 18:21:49]_[iter - 51700/100000]_[Epoch - 7]_[loss - 0.0607]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:23:57]_[iter - 51800/100000]_[Epoch - 7]_[loss - 0.0516]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 18:26:05]_[iter - 51900/100000]_[Epoch - 7]_[loss - 0.0218]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 18:28:13]_[iter - 52000/100000]_[Epoch - 7]_[loss - 0.0502]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:30:21]_[iter - 52100/100000]_[Epoch - 7]_[loss - 0.0486]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:32:29]_[iter - 52200/100000]_[Epoch - 7]_[loss - 0.1007]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 18:34:37]_[iter - 52300/100000]_[Epoch - 7]_[loss - 0.0329]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:36:45]_[iter - 52400/100000]_[Epoch - 7]_[loss - 0.0413]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:38:53]_[iter - 52500/100000]_[Epoch - 7]_[loss - 0.0589]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 18:41:01]_[iter - 52600/100000]_[Epoch - 7]_[loss - 0.0417]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 18:43:09]_[iter - 52700/100000]_[Epoch - 7]_[loss - 0.0620]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 18:45:17]_[iter - 52800/100000]_[Epoch - 7]_[loss - 0.0589]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 18:47:25]_[iter - 52900/100000]_[Epoch - 7]_[loss - 0.0416]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 18:49:33]_[iter - 53000/100000]_[Epoch - 7]_[loss - 0.0191]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:51:41]_[iter - 53100/100000]_[Epoch - 7]_[loss - 0.0631]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:53:49]_[iter - 53200/100000]_[Epoch - 7]_[loss - 0.0472]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:55:57]_[iter - 53300/100000]_[Epoch - 7]_[loss - 0.0917]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 18:58:05]_[iter - 53400/100000]_[Epoch - 7]_[loss - 0.0966]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:00:13]_[iter - 53500/100000]_[Epoch - 7]_[loss - 0.0437]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:02:21]_[iter - 53600/100000]_[Epoch - 7]_[loss - 0.1032]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 19:04:29]_[iter - 53700/100000]_[Epoch - 7]_[loss - 0.0627]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:06:37]_[iter - 53800/100000]_[Epoch - 7]_[loss - 0.0383]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:08:45]_[iter - 53900/100000]_[Epoch - 7]_[loss - 0.0373]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:10:53]_[iter - 54000/100000]_[Epoch - 7]_[loss - 0.0759]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:13:01]_[iter - 54100/100000]_[Epoch - 7]_[loss - 0.0292]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:15:09]_[iter - 54200/100000]_[Epoch - 7]_[loss - 0.0537]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 19:17:17]_[iter - 54300/100000]_[Epoch - 7]_[loss - 0.0441]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 19:19:25]_[iter - 54400/100000]_[Epoch - 7]_[loss - 0.1084]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:21:33]_[iter - 54500/100000]_[Epoch - 7]_[loss - 0.0712]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:23:41]_[iter - 54600/100000]_[Epoch - 7]_[loss - 0.0539]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:25:49]_[iter - 54700/100000]_[Epoch - 7]_[loss - 0.1275]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:27:57]_[iter - 54800/100000]_[Epoch - 7]_[loss - 0.0407]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:30:05]_[iter - 54900/100000]_[Epoch - 7]_[loss - 0.0697]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:32:13]_[iter - 55000/100000]_[Epoch - 7]_[loss - 0.0557]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 19:34:21]_[iter - 55100/100000]_[Epoch - 7]_[loss - 0.0585]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 19:36:29]_[iter - 55200/100000]_[Epoch - 7]_[loss - 0.0394]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 19:38:37]_[iter - 55300/100000]_[Epoch - 8]_[loss - 0.0836]_[loss mean- 0.0662]
+==============================
+[Train]_[Elapsed Time - 19:40:45]_[iter - 55400/100000]_[Epoch - 8]_[loss - 0.0651]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 19:42:53]_[iter - 55500/100000]_[Epoch - 8]_[loss - 0.0551]_[loss mean- 0.0638]
+==============================
+[Train]_[Elapsed Time - 19:45:01]_[iter - 55600/100000]_[Epoch - 8]_[loss - 0.0578]_[loss mean- 0.0643]
+==============================
+[Train]_[Elapsed Time - 19:47:09]_[iter - 55700/100000]_[Epoch - 8]_[loss - 0.1123]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 19:49:17]_[iter - 55800/100000]_[Epoch - 8]_[loss - 0.0821]_[loss mean- 0.0633]
+==============================
+[Train]_[Elapsed Time - 19:51:25]_[iter - 55900/100000]_[Epoch - 8]_[loss - 0.0892]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 19:53:33]_[iter - 56000/100000]_[Epoch - 8]_[loss - 0.0493]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 19:55:41]_[iter - 56100/100000]_[Epoch - 8]_[loss - 0.0365]_[loss mean- 0.0635]
+==============================
+[Train]_[Elapsed Time - 19:57:49]_[iter - 56200/100000]_[Epoch - 8]_[loss - 0.0445]_[loss mean- 0.0634]
+==============================
+[Train]_[Elapsed Time - 19:59:57]_[iter - 56300/100000]_[Epoch - 8]_[loss - 0.0323]_[loss mean- 0.0632]
+==============================
+[Train]_[Elapsed Time - 20:02:05]_[iter - 56400/100000]_[Epoch - 8]_[loss - 0.0873]_[loss mean- 0.0631]
+==============================
+[Train]_[Elapsed Time - 20:04:13]_[iter - 56500/100000]_[Epoch - 8]_[loss - 0.0198]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 20:06:21]_[iter - 56600/100000]_[Epoch - 8]_[loss - 0.0471]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 20:08:29]_[iter - 56700/100000]_[Epoch - 8]_[loss - 0.0627]_[loss mean- 0.0629]
+==============================
+[Train]_[Elapsed Time - 20:10:37]_[iter - 56800/100000]_[Epoch - 8]_[loss - 0.0940]_[loss mean- 0.0628]
+==============================
+[Train]_[Elapsed Time - 20:12:45]_[iter - 56900/100000]_[Epoch - 8]_[loss - 0.0693]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:14:53]_[iter - 57000/100000]_[Epoch - 8]_[loss - 0.0627]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:17:01]_[iter - 57100/100000]_[Epoch - 8]_[loss - 0.1031]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 20:19:09]_[iter - 57200/100000]_[Epoch - 8]_[loss - 0.0765]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 20:21:17]_[iter - 57300/100000]_[Epoch - 8]_[loss - 0.0818]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:23:25]_[iter - 57400/100000]_[Epoch - 8]_[loss - 0.0216]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:25:34]_[iter - 57500/100000]_[Epoch - 8]_[loss - 0.0639]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:27:41]_[iter - 57600/100000]_[Epoch - 8]_[loss - 0.0772]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:29:49]_[iter - 57700/100000]_[Epoch - 8]_[loss - 0.0404]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 20:31:57]_[iter - 57800/100000]_[Epoch - 8]_[loss - 0.0784]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 20:34:05]_[iter - 57900/100000]_[Epoch - 8]_[loss - 0.0869]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 20:36:13]_[iter - 58000/100000]_[Epoch - 8]_[loss - 0.0355]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 20:38:21]_[iter - 58100/100000]_[Epoch - 8]_[loss - 0.0602]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 20:40:29]_[iter - 58200/100000]_[Epoch - 8]_[loss - 0.0363]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 20:42:38]_[iter - 58300/100000]_[Epoch - 8]_[loss - 0.0433]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 20:44:46]_[iter - 58400/100000]_[Epoch - 8]_[loss - 0.0423]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 20:46:53]_[iter - 58500/100000]_[Epoch - 8]_[loss - 0.0761]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 20:49:01]_[iter - 58600/100000]_[Epoch - 8]_[loss - 0.0668]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 20:51:10]_[iter - 58700/100000]_[Epoch - 8]_[loss - 0.0641]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 20:53:18]_[iter - 58800/100000]_[Epoch - 8]_[loss - 0.0487]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 20:55:26]_[iter - 58900/100000]_[Epoch - 8]_[loss - 0.0480]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 20:57:34]_[iter - 59000/100000]_[Epoch - 8]_[loss - 0.0514]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 20:59:42]_[iter - 59100/100000]_[Epoch - 8]_[loss - 0.0872]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 21:01:50]_[iter - 59200/100000]_[Epoch - 8]_[loss - 0.0468]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 21:03:58]_[iter - 59300/100000]_[Epoch - 8]_[loss - 0.0647]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 21:06:06]_[iter - 59400/100000]_[Epoch - 8]_[loss - 0.0406]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 21:08:14]_[iter - 59500/100000]_[Epoch - 8]_[loss - 0.0901]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 21:10:22]_[iter - 59600/100000]_[Epoch - 8]_[loss - 0.0793]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 21:12:30]_[iter - 59700/100000]_[Epoch - 8]_[loss - 0.0289]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:14:38]_[iter - 59800/100000]_[Epoch - 8]_[loss - 0.0815]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:16:46]_[iter - 59900/100000]_[Epoch - 8]_[loss - 0.0573]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:18:54]_[iter - 60000/100000]_[Epoch - 8]_[loss - 0.0823]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:21:02]_[iter - 60100/100000]_[Epoch - 8]_[loss - 0.0302]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:23:10]_[iter - 60200/100000]_[Epoch - 8]_[loss - 0.0559]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 21:25:18]_[iter - 60300/100000]_[Epoch - 8]_[loss - 0.0702]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:27:26]_[iter - 60400/100000]_[Epoch - 8]_[loss - 0.1117]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:29:34]_[iter - 60500/100000]_[Epoch - 8]_[loss - 0.0705]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:31:42]_[iter - 60600/100000]_[Epoch - 8]_[loss - 0.0379]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:33:50]_[iter - 60700/100000]_[Epoch - 8]_[loss - 0.0463]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:35:58]_[iter - 60800/100000]_[Epoch - 8]_[loss - 0.0275]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:38:07]_[iter - 60900/100000]_[Epoch - 8]_[loss - 0.0492]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 21:40:15]_[iter - 61000/100000]_[Epoch - 8]_[loss - 0.0405]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:42:22]_[iter - 61100/100000]_[Epoch - 8]_[loss - 0.0573]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:44:30]_[iter - 61200/100000]_[Epoch - 8]_[loss - 0.0475]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:46:38]_[iter - 61300/100000]_[Epoch - 8]_[loss - 0.0836]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:48:46]_[iter - 61400/100000]_[Epoch - 8]_[loss - 0.1118]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:50:54]_[iter - 61500/100000]_[Epoch - 8]_[loss - 0.0772]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 21:53:02]_[iter - 61600/100000]_[Epoch - 8]_[loss - 0.0526]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:55:10]_[iter - 61700/100000]_[Epoch - 8]_[loss - 0.1066]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:57:18]_[iter - 61800/100000]_[Epoch - 8]_[loss - 0.0936]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 21:59:26]_[iter - 61900/100000]_[Epoch - 8]_[loss - 0.0871]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 22:01:34]_[iter - 62000/100000]_[Epoch - 8]_[loss - 0.0518]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 22:03:42]_[iter - 62100/100000]_[Epoch - 8]_[loss - 0.0794]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 22:05:50]_[iter - 62200/100000]_[Epoch - 8]_[loss - 0.0406]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 22:07:58]_[iter - 62300/100000]_[Epoch - 8]_[loss - 0.0859]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:10:06]_[iter - 62400/100000]_[Epoch - 8]_[loss - 0.0610]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:12:14]_[iter - 62500/100000]_[Epoch - 8]_[loss - 0.0165]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:14:22]_[iter - 62600/100000]_[Epoch - 8]_[loss - 0.0782]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:16:30]_[iter - 62700/100000]_[Epoch - 8]_[loss - 0.0981]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:18:38]_[iter - 62800/100000]_[Epoch - 8]_[loss - 0.0505]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:20:46]_[iter - 62900/100000]_[Epoch - 8]_[loss - 0.0371]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:22:54]_[iter - 63000/100000]_[Epoch - 8]_[loss - 0.0611]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:25:02]_[iter - 63100/100000]_[Epoch - 8]_[loss - 0.0500]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:27:11]_[iter - 63200/100000]_[Epoch - 9]_[loss - 0.0632]_[loss mean- 0.0579]
+==============================
+[Train]_[Elapsed Time - 22:29:18]_[iter - 63300/100000]_[Epoch - 9]_[loss - 0.0551]_[loss mean- 0.0598]
+==============================
+[Train]_[Elapsed Time - 22:31:26]_[iter - 63400/100000]_[Epoch - 9]_[loss - 0.0394]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:33:34]_[iter - 63500/100000]_[Epoch - 9]_[loss - 0.0737]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 22:35:42]_[iter - 63600/100000]_[Epoch - 9]_[loss - 0.0576]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 22:37:50]_[iter - 63700/100000]_[Epoch - 9]_[loss - 0.0441]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 22:39:58]_[iter - 63800/100000]_[Epoch - 9]_[loss - 0.0834]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 22:42:06]_[iter - 63900/100000]_[Epoch - 9]_[loss - 0.0519]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 22:44:14]_[iter - 64000/100000]_[Epoch - 9]_[loss - 0.0729]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 22:46:22]_[iter - 64100/100000]_[Epoch - 9]_[loss - 0.0906]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 22:48:31]_[iter - 64200/100000]_[Epoch - 9]_[loss - 0.0542]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 22:50:39]_[iter - 64300/100000]_[Epoch - 9]_[loss - 0.0365]_[loss mean- 0.0622]
+==============================
+[Train]_[Elapsed Time - 22:52:46]_[iter - 64400/100000]_[Epoch - 9]_[loss - 0.0712]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 22:54:54]_[iter - 64500/100000]_[Epoch - 9]_[loss - 0.0692]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 22:57:02]_[iter - 64600/100000]_[Epoch - 9]_[loss - 0.0488]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 22:59:10]_[iter - 64700/100000]_[Epoch - 9]_[loss - 0.0658]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 23:01:19]_[iter - 64800/100000]_[Epoch - 9]_[loss - 0.0613]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 23:03:27]_[iter - 64900/100000]_[Epoch - 9]_[loss - 0.0548]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 23:05:35]_[iter - 65000/100000]_[Epoch - 9]_[loss - 0.0390]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 23:07:43]_[iter - 65100/100000]_[Epoch - 9]_[loss - 0.0791]_[loss mean- 0.0625]
+==============================
+[Train]_[Elapsed Time - 23:09:51]_[iter - 65200/100000]_[Epoch - 9]_[loss - 0.0369]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 23:11:59]_[iter - 65300/100000]_[Epoch - 9]_[loss - 0.0574]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 23:14:07]_[iter - 65400/100000]_[Epoch - 9]_[loss - 0.0521]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 23:16:15]_[iter - 65500/100000]_[Epoch - 9]_[loss - 0.1056]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 23:18:23]_[iter - 65600/100000]_[Epoch - 9]_[loss - 0.0383]_[loss mean- 0.0627]
+==============================
+[Train]_[Elapsed Time - 23:20:31]_[iter - 65700/100000]_[Epoch - 9]_[loss - 0.0421]_[loss mean- 0.0626]
+==============================
+[Train]_[Elapsed Time - 23:22:39]_[iter - 65800/100000]_[Epoch - 9]_[loss - 0.0615]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 23:24:47]_[iter - 65900/100000]_[Epoch - 9]_[loss - 0.0616]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 23:26:55]_[iter - 66000/100000]_[Epoch - 9]_[loss - 0.0626]_[loss mean- 0.0624]
+==============================
+[Train]_[Elapsed Time - 23:29:03]_[iter - 66100/100000]_[Epoch - 9]_[loss - 0.0830]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 23:31:10]_[iter - 66200/100000]_[Epoch - 9]_[loss - 0.0478]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 23:33:19]_[iter - 66300/100000]_[Epoch - 9]_[loss - 0.0712]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 23:35:27]_[iter - 66400/100000]_[Epoch - 9]_[loss - 0.0769]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:37:34]_[iter - 66500/100000]_[Epoch - 9]_[loss - 0.0353]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 23:39:42]_[iter - 66600/100000]_[Epoch - 9]_[loss - 0.0847]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:41:50]_[iter - 66700/100000]_[Epoch - 9]_[loss - 0.1137]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:43:58]_[iter - 66800/100000]_[Epoch - 9]_[loss - 0.0379]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:46:06]_[iter - 66900/100000]_[Epoch - 9]_[loss - 0.0355]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:48:14]_[iter - 67000/100000]_[Epoch - 9]_[loss - 0.0915]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 23:50:22]_[iter - 67100/100000]_[Epoch - 9]_[loss - 0.0996]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:52:30]_[iter - 67200/100000]_[Epoch - 9]_[loss - 0.0868]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:54:38]_[iter - 67300/100000]_[Epoch - 9]_[loss - 0.0509]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:56:46]_[iter - 67400/100000]_[Epoch - 9]_[loss - 0.0431]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 23:58:54]_[iter - 67500/100000]_[Epoch - 9]_[loss - 0.0795]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:01:02]_[iter - 67600/100000]_[Epoch - 9]_[loss - 0.0583]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:03:10]_[iter - 67700/100000]_[Epoch - 9]_[loss - 0.0900]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:05:18]_[iter - 67800/100000]_[Epoch - 9]_[loss - 0.0585]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:07:26]_[iter - 67900/100000]_[Epoch - 9]_[loss - 0.0993]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:09:34]_[iter - 68000/100000]_[Epoch - 9]_[loss - 0.0541]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:11:42]_[iter - 68100/100000]_[Epoch - 9]_[loss - 0.0633]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:13:50]_[iter - 68200/100000]_[Epoch - 9]_[loss - 0.1064]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:15:58]_[iter - 68300/100000]_[Epoch - 9]_[loss - 0.0382]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:18:06]_[iter - 68400/100000]_[Epoch - 9]_[loss - 0.0610]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:20:14]_[iter - 68500/100000]_[Epoch - 9]_[loss - 0.0613]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:22:22]_[iter - 68600/100000]_[Epoch - 9]_[loss - 0.0927]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:24:30]_[iter - 68700/100000]_[Epoch - 9]_[loss - 0.0317]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:26:38]_[iter - 68800/100000]_[Epoch - 9]_[loss - 0.0627]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:28:46]_[iter - 68900/100000]_[Epoch - 9]_[loss - 0.0573]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:30:54]_[iter - 69000/100000]_[Epoch - 9]_[loss - 0.1168]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:33:02]_[iter - 69100/100000]_[Epoch - 9]_[loss - 0.0575]_[loss mean- 0.0619]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:35:10]_[iter - 69200/100000]_[Epoch - 9]_[loss - 0.0391]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:37:18]_[iter - 69300/100000]_[Epoch - 9]_[loss - 0.0704]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:39:26]_[iter - 69400/100000]_[Epoch - 9]_[loss - 0.0333]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:41:34]_[iter - 69500/100000]_[Epoch - 9]_[loss - 0.0711]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:43:42]_[iter - 69600/100000]_[Epoch - 9]_[loss - 0.1223]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:45:50]_[iter - 69700/100000]_[Epoch - 9]_[loss - 0.0558]_[loss mean- 0.0618]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:47:58]_[iter - 69800/100000]_[Epoch - 9]_[loss - 0.0519]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:50:06]_[iter - 69900/100000]_[Epoch - 9]_[loss - 0.0138]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:52:14]_[iter - 70000/100000]_[Epoch - 9]_[loss - 0.1163]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:54:22]_[iter - 70100/100000]_[Epoch - 9]_[loss - 0.0777]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:56:30]_[iter - 70200/100000]_[Epoch - 9]_[loss - 0.0510]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 0:58:38]_[iter - 70300/100000]_[Epoch - 9]_[loss - 0.0395]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:00:46]_[iter - 70400/100000]_[Epoch - 9]_[loss - 0.0749]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:02:54]_[iter - 70500/100000]_[Epoch - 9]_[loss - 0.0251]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:05:02]_[iter - 70600/100000]_[Epoch - 9]_[loss - 0.0713]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:07:10]_[iter - 70700/100000]_[Epoch - 9]_[loss - 0.0277]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:09:18]_[iter - 70800/100000]_[Epoch - 9]_[loss - 0.0557]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:11:27]_[iter - 70900/100000]_[Epoch - 9]_[loss - 0.0789]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:13:34]_[iter - 71000/100000]_[Epoch - 9]_[loss - 0.0700]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:15:43]_[iter - 71100/100000]_[Epoch - 10]_[loss - 0.0824]_[loss mean- 0.0595]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:17:51]_[iter - 71200/100000]_[Epoch - 10]_[loss - 0.0507]_[loss mean- 0.0600]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:19:59]_[iter - 71300/100000]_[Epoch - 10]_[loss - 0.0490]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:22:07]_[iter - 71400/100000]_[Epoch - 10]_[loss - 0.0751]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:24:15]_[iter - 71500/100000]_[Epoch - 10]_[loss - 0.0642]_[loss mean- 0.0601]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:26:23]_[iter - 71600/100000]_[Epoch - 10]_[loss - 0.1048]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:28:31]_[iter - 71700/100000]_[Epoch - 10]_[loss - 0.0668]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:30:39]_[iter - 71800/100000]_[Epoch - 10]_[loss - 0.0547]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:32:47]_[iter - 71900/100000]_[Epoch - 10]_[loss - 0.0772]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:34:55]_[iter - 72000/100000]_[Epoch - 10]_[loss - 0.0416]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:37:03]_[iter - 72100/100000]_[Epoch - 10]_[loss - 0.0246]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:39:11]_[iter - 72200/100000]_[Epoch - 10]_[loss - 0.0846]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:41:19]_[iter - 72300/100000]_[Epoch - 10]_[loss - 0.0795]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:43:27]_[iter - 72400/100000]_[Epoch - 10]_[loss - 0.0926]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:45:35]_[iter - 72500/100000]_[Epoch - 10]_[loss - 0.0997]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:47:43]_[iter - 72600/100000]_[Epoch - 10]_[loss - 0.0572]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:49:50]_[iter - 72700/100000]_[Epoch - 10]_[loss - 0.0851]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:51:58]_[iter - 72800/100000]_[Epoch - 10]_[loss - 0.0569]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:54:06]_[iter - 72900/100000]_[Epoch - 10]_[loss - 0.0459]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:56:14]_[iter - 73000/100000]_[Epoch - 10]_[loss - 0.0448]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 1:58:22]_[iter - 73100/100000]_[Epoch - 10]_[loss - 0.0562]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:00:30]_[iter - 73200/100000]_[Epoch - 10]_[loss - 0.0867]_[loss mean- 0.0617]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:02:38]_[iter - 73300/100000]_[Epoch - 10]_[loss - 0.0702]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:04:46]_[iter - 73400/100000]_[Epoch - 10]_[loss - 0.0343]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:06:54]_[iter - 73500/100000]_[Epoch - 10]_[loss - 0.0467]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:09:02]_[iter - 73600/100000]_[Epoch - 10]_[loss - 0.0450]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:11:10]_[iter - 73700/100000]_[Epoch - 10]_[loss - 0.0565]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:13:18]_[iter - 73800/100000]_[Epoch - 10]_[loss - 0.0645]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:15:26]_[iter - 73900/100000]_[Epoch - 10]_[loss - 0.0836]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:17:34]_[iter - 74000/100000]_[Epoch - 10]_[loss - 0.1053]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:19:42]_[iter - 74100/100000]_[Epoch - 10]_[loss - 0.0650]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:21:50]_[iter - 74200/100000]_[Epoch - 10]_[loss - 0.0817]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:23:58]_[iter - 74300/100000]_[Epoch - 10]_[loss - 0.0840]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:26:06]_[iter - 74400/100000]_[Epoch - 10]_[loss - 0.0554]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:28:14]_[iter - 74500/100000]_[Epoch - 10]_[loss - 0.0936]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:30:21]_[iter - 74600/100000]_[Epoch - 10]_[loss - 0.0578]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:32:29]_[iter - 74700/100000]_[Epoch - 10]_[loss - 0.0284]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:34:37]_[iter - 74800/100000]_[Epoch - 10]_[loss - 0.0623]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:36:45]_[iter - 74900/100000]_[Epoch - 10]_[loss - 0.0842]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:38:53]_[iter - 75000/100000]_[Epoch - 10]_[loss - 0.0425]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:41:01]_[iter - 75100/100000]_[Epoch - 10]_[loss - 0.0995]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:43:09]_[iter - 75200/100000]_[Epoch - 10]_[loss - 0.0391]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:45:17]_[iter - 75300/100000]_[Epoch - 10]_[loss - 0.1362]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:47:25]_[iter - 75400/100000]_[Epoch - 10]_[loss - 0.0281]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:49:33]_[iter - 75500/100000]_[Epoch - 10]_[loss - 0.0387]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:51:41]_[iter - 75600/100000]_[Epoch - 10]_[loss - 0.0200]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:53:49]_[iter - 75700/100000]_[Epoch - 10]_[loss - 0.0577]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:55:57]_[iter - 75800/100000]_[Epoch - 10]_[loss - 0.0365]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 2:58:05]_[iter - 75900/100000]_[Epoch - 10]_[loss - 0.0322]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:00:13]_[iter - 76000/100000]_[Epoch - 10]_[loss - 0.0466]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:02:21]_[iter - 76100/100000]_[Epoch - 10]_[loss - 0.0765]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:04:29]_[iter - 76200/100000]_[Epoch - 10]_[loss - 0.0447]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:06:36]_[iter - 76300/100000]_[Epoch - 10]_[loss - 0.1048]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:08:44]_[iter - 76400/100000]_[Epoch - 10]_[loss - 0.0346]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:10:52]_[iter - 76500/100000]_[Epoch - 10]_[loss - 0.0594]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:13:00]_[iter - 76600/100000]_[Epoch - 10]_[loss - 0.0907]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:15:08]_[iter - 76700/100000]_[Epoch - 10]_[loss - 0.0478]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:17:16]_[iter - 76800/100000]_[Epoch - 10]_[loss - 0.0370]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:19:24]_[iter - 76900/100000]_[Epoch - 10]_[loss - 0.0636]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:21:32]_[iter - 77000/100000]_[Epoch - 10]_[loss - 0.0637]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:23:40]_[iter - 77100/100000]_[Epoch - 10]_[loss - 0.0755]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:25:48]_[iter - 77200/100000]_[Epoch - 10]_[loss - 0.0531]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:27:56]_[iter - 77300/100000]_[Epoch - 10]_[loss - 0.1234]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:30:04]_[iter - 77400/100000]_[Epoch - 10]_[loss - 0.0683]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:32:12]_[iter - 77500/100000]_[Epoch - 10]_[loss - 0.0370]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:34:20]_[iter - 77600/100000]_[Epoch - 10]_[loss - 0.1404]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:36:28]_[iter - 77700/100000]_[Epoch - 10]_[loss - 0.0368]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:38:35]_[iter - 77800/100000]_[Epoch - 10]_[loss - 0.0336]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:40:43]_[iter - 77900/100000]_[Epoch - 10]_[loss - 0.0440]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:42:51]_[iter - 78000/100000]_[Epoch - 10]_[loss - 0.0577]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:44:59]_[iter - 78100/100000]_[Epoch - 10]_[loss - 0.0518]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:47:07]_[iter - 78200/100000]_[Epoch - 10]_[loss - 0.0738]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:49:15]_[iter - 78300/100000]_[Epoch - 10]_[loss - 0.0401]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:51:23]_[iter - 78400/100000]_[Epoch - 10]_[loss - 0.0856]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:53:31]_[iter - 78500/100000]_[Epoch - 10]_[loss - 0.1001]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:55:39]_[iter - 78600/100000]_[Epoch - 10]_[loss - 0.0611]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:57:47]_[iter - 78700/100000]_[Epoch - 10]_[loss - 0.0780]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 3:59:55]_[iter - 78800/100000]_[Epoch - 10]_[loss - 0.0561]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:02:03]_[iter - 78900/100000]_[Epoch - 11]_[loss - 0.0424]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:04:11]_[iter - 79000/100000]_[Epoch - 11]_[loss - 0.0588]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:06:19]_[iter - 79100/100000]_[Epoch - 11]_[loss - 0.0707]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:08:27]_[iter - 79200/100000]_[Epoch - 11]_[loss - 0.0360]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:10:35]_[iter - 79300/100000]_[Epoch - 11]_[loss - 0.0870]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:12:42]_[iter - 79400/100000]_[Epoch - 11]_[loss - 0.0492]_[loss mean- 0.0616]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:14:50]_[iter - 79500/100000]_[Epoch - 11]_[loss - 0.0561]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:16:58]_[iter - 79600/100000]_[Epoch - 11]_[loss - 0.0552]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:19:06]_[iter - 79700/100000]_[Epoch - 11]_[loss - 0.1025]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:21:14]_[iter - 79800/100000]_[Epoch - 11]_[loss - 0.0864]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:23:22]_[iter - 79900/100000]_[Epoch - 11]_[loss - 0.0446]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:25:30]_[iter - 80000/100000]_[Epoch - 11]_[loss - 0.0517]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:27:38]_[iter - 80100/100000]_[Epoch - 11]_[loss - 0.0444]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:29:46]_[iter - 80200/100000]_[Epoch - 11]_[loss - 0.0588]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:31:54]_[iter - 80300/100000]_[Epoch - 11]_[loss - 0.0296]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:34:02]_[iter - 80400/100000]_[Epoch - 11]_[loss - 0.0148]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:36:10]_[iter - 80500/100000]_[Epoch - 11]_[loss - 0.0639]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:38:18]_[iter - 80600/100000]_[Epoch - 11]_[loss - 0.1134]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:40:26]_[iter - 80700/100000]_[Epoch - 11]_[loss - 0.0653]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:42:34]_[iter - 80800/100000]_[Epoch - 11]_[loss - 0.1104]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:44:42]_[iter - 80900/100000]_[Epoch - 11]_[loss - 0.0394]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:46:50]_[iter - 81000/100000]_[Epoch - 11]_[loss - 0.0890]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:48:58]_[iter - 81100/100000]_[Epoch - 11]_[loss - 0.0565]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:51:06]_[iter - 81200/100000]_[Epoch - 11]_[loss - 0.0758]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:53:14]_[iter - 81300/100000]_[Epoch - 11]_[loss - 0.0504]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:55:22]_[iter - 81400/100000]_[Epoch - 11]_[loss - 0.0796]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:57:30]_[iter - 81500/100000]_[Epoch - 11]_[loss - 0.0854]_[loss mean- 0.0615]
+==============================
+[Train]_[Elapsed Time - 1 day, 4:59:38]_[iter - 81600/100000]_[Epoch - 11]_[loss - 0.0651]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:01:46]_[iter - 81700/100000]_[Epoch - 11]_[loss - 0.0555]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:03:54]_[iter - 81800/100000]_[Epoch - 11]_[loss - 0.0576]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:06:02]_[iter - 81900/100000]_[Epoch - 11]_[loss - 0.1084]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:08:10]_[iter - 82000/100000]_[Epoch - 11]_[loss - 0.0514]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:10:18]_[iter - 82100/100000]_[Epoch - 11]_[loss - 0.0842]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:12:26]_[iter - 82200/100000]_[Epoch - 11]_[loss - 0.0304]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:14:34]_[iter - 82300/100000]_[Epoch - 11]_[loss - 0.1438]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:16:42]_[iter - 82400/100000]_[Epoch - 11]_[loss - 0.0558]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:18:50]_[iter - 82500/100000]_[Epoch - 11]_[loss - 0.0297]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:20:58]_[iter - 82600/100000]_[Epoch - 11]_[loss - 0.0771]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:23:06]_[iter - 82700/100000]_[Epoch - 11]_[loss - 0.0888]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:25:13]_[iter - 82800/100000]_[Epoch - 11]_[loss - 0.0489]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:27:21]_[iter - 82900/100000]_[Epoch - 11]_[loss - 0.0649]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:29:29]_[iter - 83000/100000]_[Epoch - 11]_[loss - 0.0700]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:31:37]_[iter - 83100/100000]_[Epoch - 11]_[loss - 0.0339]_[loss mean- 0.0614]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:33:45]_[iter - 83200/100000]_[Epoch - 11]_[loss - 0.0699]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:35:53]_[iter - 83300/100000]_[Epoch - 11]_[loss - 0.0210]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:38:01]_[iter - 83400/100000]_[Epoch - 11]_[loss - 0.0342]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:40:09]_[iter - 83500/100000]_[Epoch - 11]_[loss - 0.0801]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:42:17]_[iter - 83600/100000]_[Epoch - 11]_[loss - 0.0779]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:44:25]_[iter - 83700/100000]_[Epoch - 11]_[loss - 0.0809]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:46:33]_[iter - 83800/100000]_[Epoch - 11]_[loss - 0.0773]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:48:41]_[iter - 83900/100000]_[Epoch - 11]_[loss - 0.0455]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:50:49]_[iter - 84000/100000]_[Epoch - 11]_[loss - 0.0598]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:52:57]_[iter - 84100/100000]_[Epoch - 11]_[loss - 0.0839]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:55:05]_[iter - 84200/100000]_[Epoch - 11]_[loss - 0.0429]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:57:13]_[iter - 84300/100000]_[Epoch - 11]_[loss - 0.0599]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 5:59:21]_[iter - 84400/100000]_[Epoch - 11]_[loss - 0.0582]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:01:29]_[iter - 84500/100000]_[Epoch - 11]_[loss - 0.0547]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:03:37]_[iter - 84600/100000]_[Epoch - 11]_[loss - 0.0284]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:05:45]_[iter - 84700/100000]_[Epoch - 11]_[loss - 0.0446]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:07:52]_[iter - 84800/100000]_[Epoch - 11]_[loss - 0.0342]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:10:00]_[iter - 84900/100000]_[Epoch - 11]_[loss - 0.0545]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:12:08]_[iter - 85000/100000]_[Epoch - 11]_[loss - 0.0538]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:14:16]_[iter - 85100/100000]_[Epoch - 11]_[loss - 0.0682]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:16:24]_[iter - 85200/100000]_[Epoch - 11]_[loss - 0.0424]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:18:32]_[iter - 85300/100000]_[Epoch - 11]_[loss - 0.0205]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:20:40]_[iter - 85400/100000]_[Epoch - 11]_[loss - 0.0469]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:22:48]_[iter - 85500/100000]_[Epoch - 11]_[loss - 0.0236]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:24:56]_[iter - 85600/100000]_[Epoch - 11]_[loss - 0.0723]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:27:04]_[iter - 85700/100000]_[Epoch - 11]_[loss - 0.0523]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:29:12]_[iter - 85800/100000]_[Epoch - 11]_[loss - 0.0542]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:31:20]_[iter - 85900/100000]_[Epoch - 11]_[loss - 0.0306]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:33:28]_[iter - 86000/100000]_[Epoch - 11]_[loss - 0.0658]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:35:36]_[iter - 86100/100000]_[Epoch - 11]_[loss - 0.0655]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:37:44]_[iter - 86200/100000]_[Epoch - 11]_[loss - 0.0708]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:39:52]_[iter - 86300/100000]_[Epoch - 11]_[loss - 0.0738]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:42:00]_[iter - 86400/100000]_[Epoch - 11]_[loss - 0.1072]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:44:08]_[iter - 86500/100000]_[Epoch - 11]_[loss - 0.0427]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:46:16]_[iter - 86600/100000]_[Epoch - 11]_[loss - 0.0477]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:48:24]_[iter - 86700/100000]_[Epoch - 11]_[loss - 0.0825]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:50:32]_[iter - 86800/100000]_[Epoch - 12]_[loss - 0.1054]_[loss mean- 0.0686]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:52:40]_[iter - 86900/100000]_[Epoch - 12]_[loss - 0.0372]_[loss mean- 0.0641]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:54:48]_[iter - 87000/100000]_[Epoch - 12]_[loss - 0.0507]_[loss mean- 0.0623]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:56:56]_[iter - 87100/100000]_[Epoch - 12]_[loss - 0.0483]_[loss mean- 0.0621]
+==============================
+[Train]_[Elapsed Time - 1 day, 6:59:05]_[iter - 87200/100000]_[Epoch - 12]_[loss - 0.0618]_[loss mean- 0.0620]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:01:13]_[iter - 87300/100000]_[Epoch - 12]_[loss - 0.0474]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:03:21]_[iter - 87400/100000]_[Epoch - 12]_[loss - 0.0502]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:05:28]_[iter - 87500/100000]_[Epoch - 12]_[loss - 0.0990]_[loss mean- 0.0606]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:07:36]_[iter - 87600/100000]_[Epoch - 12]_[loss - 0.0364]_[loss mean- 0.0600]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:09:44]_[iter - 87700/100000]_[Epoch - 12]_[loss - 0.0802]_[loss mean- 0.0603]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:11:52]_[iter - 87800/100000]_[Epoch - 12]_[loss - 0.0778]_[loss mean- 0.0602]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:14:00]_[iter - 87900/100000]_[Epoch - 12]_[loss - 0.0679]_[loss mean- 0.0603]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:16:08]_[iter - 88000/100000]_[Epoch - 12]_[loss - 0.0997]_[loss mean- 0.0607]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:18:16]_[iter - 88100/100000]_[Epoch - 12]_[loss - 0.0551]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:20:24]_[iter - 88200/100000]_[Epoch - 12]_[loss - 0.0232]_[loss mean- 0.0607]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:22:32]_[iter - 88300/100000]_[Epoch - 12]_[loss - 0.0466]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:24:40]_[iter - 88400/100000]_[Epoch - 12]_[loss - 0.0356]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:26:48]_[iter - 88500/100000]_[Epoch - 12]_[loss - 0.0463]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:28:56]_[iter - 88600/100000]_[Epoch - 12]_[loss - 0.0505]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:31:04]_[iter - 88700/100000]_[Epoch - 12]_[loss - 0.0280]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:33:12]_[iter - 88800/100000]_[Epoch - 12]_[loss - 0.0350]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:35:20]_[iter - 88900/100000]_[Epoch - 12]_[loss - 0.0460]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:37:28]_[iter - 89000/100000]_[Epoch - 12]_[loss - 0.0585]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:39:36]_[iter - 89100/100000]_[Epoch - 12]_[loss - 0.0991]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:41:44]_[iter - 89200/100000]_[Epoch - 12]_[loss - 0.0461]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:43:52]_[iter - 89300/100000]_[Epoch - 12]_[loss - 0.0646]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:46:00]_[iter - 89400/100000]_[Epoch - 12]_[loss - 0.0538]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:48:08]_[iter - 89500/100000]_[Epoch - 12]_[loss - 0.0668]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:50:16]_[iter - 89600/100000]_[Epoch - 12]_[loss - 0.0373]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:52:24]_[iter - 89700/100000]_[Epoch - 12]_[loss - 0.0520]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:54:32]_[iter - 89800/100000]_[Epoch - 12]_[loss - 0.0743]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:56:40]_[iter - 89900/100000]_[Epoch - 12]_[loss - 0.0338]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 7:58:48]_[iter - 90000/100000]_[Epoch - 12]_[loss - 0.0841]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:00:56]_[iter - 90100/100000]_[Epoch - 12]_[loss - 0.0550]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:03:04]_[iter - 90200/100000]_[Epoch - 12]_[loss - 0.0529]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:05:12]_[iter - 90300/100000]_[Epoch - 12]_[loss - 0.0572]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:07:20]_[iter - 90400/100000]_[Epoch - 12]_[loss - 0.0558]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:09:28]_[iter - 90500/100000]_[Epoch - 12]_[loss - 0.0559]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:11:37]_[iter - 90600/100000]_[Epoch - 12]_[loss - 0.1433]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:13:45]_[iter - 90700/100000]_[Epoch - 12]_[loss - 0.0598]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:15:52]_[iter - 90800/100000]_[Epoch - 12]_[loss - 0.0646]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:18:00]_[iter - 90900/100000]_[Epoch - 12]_[loss - 0.0787]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:20:08]_[iter - 91000/100000]_[Epoch - 12]_[loss - 0.0486]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:22:16]_[iter - 91100/100000]_[Epoch - 12]_[loss - 0.0287]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:24:24]_[iter - 91200/100000]_[Epoch - 12]_[loss - 0.0510]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:26:32]_[iter - 91300/100000]_[Epoch - 12]_[loss - 0.0665]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:28:40]_[iter - 91400/100000]_[Epoch - 12]_[loss - 0.0827]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:30:48]_[iter - 91500/100000]_[Epoch - 12]_[loss - 0.0470]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:32:56]_[iter - 91600/100000]_[Epoch - 12]_[loss - 0.0576]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:35:04]_[iter - 91700/100000]_[Epoch - 12]_[loss - 0.0826]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:37:12]_[iter - 91800/100000]_[Epoch - 12]_[loss - 0.0715]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:39:20]_[iter - 91900/100000]_[Epoch - 12]_[loss - 0.0456]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:41:28]_[iter - 92000/100000]_[Epoch - 12]_[loss - 0.0490]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:43:36]_[iter - 92100/100000]_[Epoch - 12]_[loss - 0.0432]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:45:44]_[iter - 92200/100000]_[Epoch - 12]_[loss - 0.0824]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:47:52]_[iter - 92300/100000]_[Epoch - 12]_[loss - 0.0389]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:50:00]_[iter - 92400/100000]_[Epoch - 12]_[loss - 0.0620]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:52:08]_[iter - 92500/100000]_[Epoch - 12]_[loss - 0.0751]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:54:16]_[iter - 92600/100000]_[Epoch - 12]_[loss - 0.1013]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:56:24]_[iter - 92700/100000]_[Epoch - 12]_[loss - 0.0366]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 8:58:32]_[iter - 92800/100000]_[Epoch - 12]_[loss - 0.0369]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:00:40]_[iter - 92900/100000]_[Epoch - 12]_[loss - 0.0863]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:02:48]_[iter - 93000/100000]_[Epoch - 12]_[loss - 0.0602]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:04:56]_[iter - 93100/100000]_[Epoch - 12]_[loss - 0.0457]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:07:04]_[iter - 93200/100000]_[Epoch - 12]_[loss - 0.0969]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:09:12]_[iter - 93300/100000]_[Epoch - 12]_[loss - 0.0688]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:11:20]_[iter - 93400/100000]_[Epoch - 12]_[loss - 0.0422]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:13:28]_[iter - 93500/100000]_[Epoch - 12]_[loss - 0.0363]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:15:36]_[iter - 93600/100000]_[Epoch - 12]_[loss - 0.0623]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:17:44]_[iter - 93700/100000]_[Epoch - 12]_[loss - 0.1198]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:19:52]_[iter - 93800/100000]_[Epoch - 12]_[loss - 0.0192]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:21:59]_[iter - 93900/100000]_[Epoch - 12]_[loss - 0.0372]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:24:07]_[iter - 94000/100000]_[Epoch - 12]_[loss - 0.0444]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:26:16]_[iter - 94100/100000]_[Epoch - 12]_[loss - 0.0832]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:28:24]_[iter - 94200/100000]_[Epoch - 12]_[loss - 0.0445]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:30:32]_[iter - 94300/100000]_[Epoch - 12]_[loss - 0.0675]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:32:40]_[iter - 94400/100000]_[Epoch - 12]_[loss - 0.0796]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:34:48]_[iter - 94500/100000]_[Epoch - 12]_[loss - 0.0284]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:36:56]_[iter - 94600/100000]_[Epoch - 12]_[loss - 0.0548]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:39:04]_[iter - 94700/100000]_[Epoch - 13]_[loss - 0.0400]_[loss mean- 0.0561]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:41:12]_[iter - 94800/100000]_[Epoch - 13]_[loss - 0.0128]_[loss mean- 0.0579]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:43:21]_[iter - 94900/100000]_[Epoch - 13]_[loss - 0.0312]_[loss mean- 0.0587]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:45:29]_[iter - 95000/100000]_[Epoch - 13]_[loss - 0.0614]_[loss mean- 0.0601]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:47:36]_[iter - 95100/100000]_[Epoch - 13]_[loss - 0.0638]_[loss mean- 0.0601]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:49:44]_[iter - 95200/100000]_[Epoch - 13]_[loss - 0.0406]_[loss mean- 0.0602]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:51:52]_[iter - 95300/100000]_[Epoch - 13]_[loss - 0.0354]_[loss mean- 0.0599]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:54:00]_[iter - 95400/100000]_[Epoch - 13]_[loss - 0.0243]_[loss mean- 0.0599]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:56:08]_[iter - 95500/100000]_[Epoch - 13]_[loss - 0.0652]_[loss mean- 0.0601]
+==============================
+[Train]_[Elapsed Time - 1 day, 9:58:16]_[iter - 95600/100000]_[Epoch - 13]_[loss - 0.1008]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:00:24]_[iter - 95700/100000]_[Epoch - 13]_[loss - 0.0381]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:02:32]_[iter - 95800/100000]_[Epoch - 13]_[loss - 0.0863]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:04:40]_[iter - 95900/100000]_[Epoch - 13]_[loss - 0.0304]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:06:48]_[iter - 96000/100000]_[Epoch - 13]_[loss - 0.0285]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:08:56]_[iter - 96100/100000]_[Epoch - 13]_[loss - 0.0434]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:11:04]_[iter - 96200/100000]_[Epoch - 13]_[loss - 0.0512]_[loss mean- 0.0606]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:13:12]_[iter - 96300/100000]_[Epoch - 13]_[loss - 0.0328]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:15:20]_[iter - 96400/100000]_[Epoch - 13]_[loss - 0.0426]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:17:28]_[iter - 96500/100000]_[Epoch - 13]_[loss - 0.0559]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:19:36]_[iter - 96600/100000]_[Epoch - 13]_[loss - 0.0672]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:21:44]_[iter - 96700/100000]_[Epoch - 13]_[loss - 0.0605]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:23:52]_[iter - 96800/100000]_[Epoch - 13]_[loss - 0.0186]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:26:00]_[iter - 96900/100000]_[Epoch - 13]_[loss - 0.0457]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:28:08]_[iter - 97000/100000]_[Epoch - 13]_[loss - 0.0640]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:30:16]_[iter - 97100/100000]_[Epoch - 13]_[loss - 0.0668]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:32:24]_[iter - 97200/100000]_[Epoch - 13]_[loss - 0.0743]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:34:32]_[iter - 97300/100000]_[Epoch - 13]_[loss - 0.0700]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:36:40]_[iter - 97400/100000]_[Epoch - 13]_[loss - 0.0147]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:38:48]_[iter - 97500/100000]_[Epoch - 13]_[loss - 0.0688]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:40:56]_[iter - 97600/100000]_[Epoch - 13]_[loss - 0.0296]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:43:04]_[iter - 97700/100000]_[Epoch - 13]_[loss - 0.0422]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:45:12]_[iter - 97800/100000]_[Epoch - 13]_[loss - 0.0520]_[loss mean- 0.0607]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:47:20]_[iter - 97900/100000]_[Epoch - 13]_[loss - 0.0533]_[loss mean- 0.0608]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:49:28]_[iter - 98000/100000]_[Epoch - 13]_[loss - 0.0805]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:51:36]_[iter - 98100/100000]_[Epoch - 13]_[loss - 0.0502]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:53:44]_[iter - 98200/100000]_[Epoch - 13]_[loss - 0.0516]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:55:52]_[iter - 98300/100000]_[Epoch - 13]_[loss - 0.0327]_[loss mean- 0.0609]
+==============================
+[Train]_[Elapsed Time - 1 day, 10:58:00]_[iter - 98400/100000]_[Epoch - 13]_[loss - 0.0645]_[loss mean- 0.0610]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:00:08]_[iter - 98500/100000]_[Epoch - 13]_[loss - 0.0932]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:02:16]_[iter - 98600/100000]_[Epoch - 13]_[loss - 0.0247]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:04:24]_[iter - 98700/100000]_[Epoch - 13]_[loss - 0.0771]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:06:32]_[iter - 98800/100000]_[Epoch - 13]_[loss - 0.0753]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:08:40]_[iter - 98900/100000]_[Epoch - 13]_[loss - 0.0956]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:10:48]_[iter - 99000/100000]_[Epoch - 13]_[loss - 0.1362]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:12:56]_[iter - 99100/100000]_[Epoch - 13]_[loss - 0.0254]_[loss mean- 0.0613]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:15:04]_[iter - 99200/100000]_[Epoch - 13]_[loss - 0.0497]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:17:12]_[iter - 99300/100000]_[Epoch - 13]_[loss - 0.0822]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:19:20]_[iter - 99400/100000]_[Epoch - 13]_[loss - 0.0393]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:21:28]_[iter - 99500/100000]_[Epoch - 13]_[loss - 0.0708]_[loss mean- 0.0612]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:23:36]_[iter - 99600/100000]_[Epoch - 13]_[loss - 0.0644]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:25:44]_[iter - 99700/100000]_[Epoch - 13]_[loss - 0.0471]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:27:52]_[iter - 99800/100000]_[Epoch - 13]_[loss - 0.0814]_[loss mean- 0.0611]
+==============================
+[Train]_[Elapsed Time - 1 day, 11:30:00]_[iter - 99900/100000]_[Epoch - 13]_[loss - 0.0483]_[loss mean- 0.0612]
+==============================
