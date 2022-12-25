@@ -25,6 +25,7 @@ Implement GANs
 22. DRIT ++ => https://arxiv.org/abs/1905.01270
 23. StarGANv2 => https://arxiv.org/abs/1912.01865
 24. SAGAN => https://arxiv.org/abs/1805.08318
+25. VQ-GAN => https://arxiv.org/abs/2012.09841
 
 # Diffusion Models
 1. DDPM => https://arxiv.org/abs/2006.11239
