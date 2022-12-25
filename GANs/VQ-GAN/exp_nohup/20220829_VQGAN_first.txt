@@ -1,0 +1,118 @@
+nohup: ignoring input
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+data_root_dir            : /home/data
+data_name                : Imagenet
+img_size_H               : 256
+img_size_W               : 256
+n_workers                : 4
+in_ch                    : 3
+ngf                      : 128
+ngf_mult                 : [1, 1, 2, 2, 4]
+resolution               : 256
+attn_resolutions         : [16]
+z_dim                    : 256
+n_embed                  : 1024
+embed_dim                : 256
+beta                     : 0.25
+ndf                      : 64
+D_n_layers               : 3
+num_res_blks             : 2
+double_z                 : False
+D_use_actnorm            : False
+n_iters                  : 500000
+batch_size               : 4
+val_batch_size           : 128
+perceptual_weight        : 1.0
+D_weight                 : 0.8
+D_thres_iter             : 250001
+codebook_weight          : 1.0
+G_lr                     : 4.5e-06
+D_lr                     : 4.5e-06
+betas                    : (0.5, 0.9)
+adv_loss_type            : hinge
+no_save                  : False
+save_root_dir            : /media/data1/jeonghokim/GANs/VQGAN
+save_name                : 20220830_
+log_save_iter_freq       : 200
+img_save_iter_freq       : 1000
+model_save_iter_freq     : 10000
+eval_iter_freq           : 20000
+use_DDP                  : True
+is_test                  : False
+local_rank               : 0
+n_gpus                   : 8
+save_dir                 : /media/data1/jeonghokim/GANs/VQGAN/20220830_
+img_save_dir             : /media/data1/jeonghokim/GANs/VQGAN/20220830_/save_images
+model_save_dir           : /media/data1/jeonghokim/GANs/VQGAN/20220830_/save_models
+eval_save_dir            : /media/data1/jeonghokim/GANs/VQGAN/20220830_/eval_save_images
+log_path                 : /media/data1/jeonghokim/GANs/VQGAN/20220830_/log.txt
+config_path              : /media/data1/jeonghokim/GANs/VQGAN/20220830_/config.json
+[Train] # of imgs : 1281167
+1 epochs : 160146 iters
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+# of encoder params : 29298176
+# of decoder params : 42449795
+# of quantizer params : 262144
+# of pre_quant_conv params : 65792
+# of post_quant_conv params : 65792
+# of D params : 2765633
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+[Train]_[Elapsed time - 0:01:00]_[iter - 200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.6775]_[D/loss avg - 0.0000]_[G/loss avg - 2.8812]
+[Train]_[Elapsed time - 0:01:42]_[iter - 400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.9781]_[D/loss avg - 0.0000]_[G/loss avg - 3.8649]
+WARNING:torch.distributed.elastic.agent.server.api:Received 15 death signal, shutting down workers
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26319 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26320 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26321 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26322 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26323 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26324 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26325 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 26327 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.errors.error_handler:{
+  "message": {
+    "message": "SignalException: Process 26244 got signal: 15",
+    "extraInfo": {
+      "py_callstack": "Traceback (most recent call last):\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 345, in wrapper\n    return f(*args, **kwargs)\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/run.py\", line 724, in main\n    run(args)\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/run.py\", line 718, in run\n    )(*cmd_args)\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/launcher/api.py\", line 131, in __call__\n    return launch_agent(self._config, self._entrypoint, list(args))\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/launcher/api.py\", line 236, in launch_agent\n    result = agent.run()\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/agent/server/api.py\", line 709, in run\n    result = self._invoke_run(role)\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/agent/server/api.py\", line 850, in _invoke_run\n    time.sleep(monitor_interval)\n  File \"/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/multiprocessing/api.py\", line 60, in _terminate_process_handler\n    raise SignalException(f\"Process {os.getpid()} got signal: {sigval}\", sigval=sigval)\ntorch.distributed.elastic.multiprocessing.api.SignalException: Process 26244 got signal: 15\n",
+      "timestamp": "1661827304"
+    }
+  }
+}
+Traceback (most recent call last):
+  File "/home/jeonghokim/anaconda3/envs/CECT/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 345, in wrapper
+    return f(*args, **kwargs)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/run.py", line 724, in main
+    run(args)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/run.py", line 718, in run
+    )(*cmd_args)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/launcher/api.py", line 236, in launch_agent
+    result = agent.run()
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/agent/server/api.py", line 709, in run
+    result = self._invoke_run(role)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/agent/server/api.py", line 850, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 60, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 26244 got signal: 15

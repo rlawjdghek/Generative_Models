@@ -1,0 +1,397 @@
+nohup: ignoring input
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+data_root_dir            : /home/data
+data_name                : Imagenet
+img_size_H               : 256
+img_size_W               : 256
+n_workers                : 4
+in_ch                    : 3
+ngf                      : 128
+ngf_mult                 : [1, 1, 2, 2, 4]
+resolution               : 256
+attn_resolutions         : [16]
+z_dim                    : 256
+n_embed                  : 1024
+embed_dim                : 256
+beta                     : 0.25
+ndf                      : 64
+D_n_layers               : 3
+num_res_blks             : 2
+double_z                 : False
+D_use_actnorm            : False
+n_iters                  : 500000
+batch_size               : 32
+val_batch_size           : 128
+perceptual_weight        : 1.0
+D_weight                 : 0.8
+D_thres_iter             : 250001
+codebook_weight          : 1.0
+G_lr                     : 4.5e-06
+D_lr                     : 4.5e-06
+betas                    : (0.5, 0.9)
+adv_loss_type            : hinge
+no_save                  : False
+save_root_dir            : /media/data1/jeonghokim/GANs/VQGAN
+save_name                : 20220831_
+log_save_iter_freq       : 200
+img_save_iter_freq       : 1000
+model_save_iter_freq     : 10000
+eval_iter_freq           : 20000
+use_DDP                  : True
+is_test                  : False
+local_rank               : 0
+n_gpus                   : 8
+save_dir                 : /media/data1/jeonghokim/GANs/VQGAN/20220831_
+img_save_dir             : /media/data1/jeonghokim/GANs/VQGAN/20220831_/save_images
+model_save_dir           : /media/data1/jeonghokim/GANs/VQGAN/20220831_/save_models
+eval_save_dir            : /media/data1/jeonghokim/GANs/VQGAN/20220831_/eval_save_images
+log_path                 : /media/data1/jeonghokim/GANs/VQGAN/20220831_/log.txt
+config_path              : /media/data1/jeonghokim/GANs/VQGAN/20220831_/config.json
+[Train] # of imgs : 1281167
+1 epochs : 40037 iters
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+Working with z of shape (1, 256, 16, 16) = 65536 dimensions.
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+loaded pretrained LPIPS loss from taming/modules/autoencoder/lpips/vgg.pth
+# of encoder params : 29298176
+# of decoder params : 42449795
+# of quantizer params : 262144
+# of pre_quant_conv params : 65792
+# of post_quant_conv params : 65792
+# of D params : 2765633
+[Train]_[Elapsed time - 0:01:23]_[iter - 200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.9484]_[D/loss avg - 0.0000]_[G/loss avg - 3.0204]
+[Train]_[Elapsed time - 0:02:31]_[iter - 400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.9622]_[D/loss avg - 0.0000]_[G/loss avg - 4.1788]
+[Train]_[Elapsed time - 0:03:39]_[iter - 600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 9.5037]_[D/loss avg - 0.0000]_[G/loss avg - 6.6406]
+[Train]_[Elapsed time - 0:04:47]_[iter - 800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 11.5698]_[D/loss avg - 0.0000]_[G/loss avg - 10.3506]
+[Train]_[Elapsed time - 0:05:55]_[iter - 1000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 27.6450]_[D/loss avg - 0.0000]_[G/loss avg - 14.7533]
+[Train]_[Elapsed time - 0:07:04]_[iter - 1200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 17.4526]_[D/loss avg - 0.0000]_[G/loss avg - 20.7555]
+[Train]_[Elapsed time - 0:08:12]_[iter - 1400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 53.7705]_[D/loss avg - 0.0000]_[G/loss avg - 27.6236]
+[Train]_[Elapsed time - 0:09:21]_[iter - 1600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 67.7452]_[D/loss avg - 0.0000]_[G/loss avg - 35.0403]
+[Train]_[Elapsed time - 0:10:29]_[iter - 1800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 59.1784]_[D/loss avg - 0.0000]_[G/loss avg - 42.1468]
+[Train]_[Elapsed time - 0:11:38]_[iter - 2000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 51.9472]_[D/loss avg - 0.0000]_[G/loss avg - 48.1000]
+[Train]_[Elapsed time - 0:12:46]_[iter - 2200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0383]_[D/loss avg - 0.0000]_[G/loss avg - 52.7486]
+[Train]_[Elapsed time - 0:13:55]_[iter - 2400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 35.2057]_[D/loss avg - 0.0000]_[G/loss avg - 55.9469]
+[Train]_[Elapsed time - 0:15:03]_[iter - 2600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 14.7447]_[D/loss avg - 0.0000]_[G/loss avg - 57.4487]
+[Train]_[Elapsed time - 0:16:11]_[iter - 2800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 40.3743]_[D/loss avg - 0.0000]_[G/loss avg - 57.3936]
+[Train]_[Elapsed time - 0:17:20]_[iter - 3000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.8711]_[D/loss avg - 0.0000]_[G/loss avg - 56.6338]
+[Train]_[Elapsed time - 0:18:28]_[iter - 3200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 42.6302]_[D/loss avg - 0.0000]_[G/loss avg - 55.9933]
+[Train]_[Elapsed time - 0:19:36]_[iter - 3400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0849]_[D/loss avg - 0.0000]_[G/loss avg - 55.2544]
+[Train]_[Elapsed time - 0:20:44]_[iter - 3600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 21.3933]_[D/loss avg - 0.0000]_[G/loss avg - 53.8941]
+[Train]_[Elapsed time - 0:21:52]_[iter - 3800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 14.7192]_[D/loss avg - 0.0000]_[G/loss avg - 52.4548]
+[Train]_[Elapsed time - 0:23:01]_[iter - 4000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.2006]_[D/loss avg - 0.0000]_[G/loss avg - 51.0709]
+[Train]_[Elapsed time - 0:24:09]_[iter - 4200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 25.1530]_[D/loss avg - 0.0000]_[G/loss avg - 49.9313]
+[Train]_[Elapsed time - 0:25:17]_[iter - 4400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 8.8069]_[D/loss avg - 0.0000]_[G/loss avg - 48.5488]
+[Train]_[Elapsed time - 0:26:26]_[iter - 4600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.6392]_[D/loss avg - 0.0000]_[G/loss avg - 47.0357]
+[Train]_[Elapsed time - 0:27:34]_[iter - 4800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.1104]_[D/loss avg - 0.0000]_[G/loss avg - 45.6411]
+[Train]_[Elapsed time - 0:28:43]_[iter - 5000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.1695]_[D/loss avg - 0.0000]_[G/loss avg - 44.3980]
+[Train]_[Elapsed time - 0:29:51]_[iter - 5200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0388]_[D/loss avg - 0.0000]_[G/loss avg - 43.2628]
+[Train]_[Elapsed time - 0:31:00]_[iter - 5400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.3327]_[D/loss avg - 0.0000]_[G/loss avg - 42.1352]
+[Train]_[Elapsed time - 0:32:08]_[iter - 5600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 10.9170]_[D/loss avg - 0.0000]_[G/loss avg - 41.0103]
+[Train]_[Elapsed time - 0:33:17]_[iter - 5800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.9614]_[D/loss avg - 0.0000]_[G/loss avg - 39.9628]
+[Train]_[Elapsed time - 0:34:25]_[iter - 6000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 12.7659]_[D/loss avg - 0.0000]_[G/loss avg - 38.9880]
+[Train]_[Elapsed time - 0:35:34]_[iter - 6200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 22.0630]_[D/loss avg - 0.0000]_[G/loss avg - 38.1095]
+[Train]_[Elapsed time - 0:36:42]_[iter - 6400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.6726]_[D/loss avg - 0.0000]_[G/loss avg - 37.2310]
+[Train]_[Elapsed time - 0:37:50]_[iter - 6600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.6476]_[D/loss avg - 0.0000]_[G/loss avg - 36.4457]
+[Train]_[Elapsed time - 0:38:59]_[iter - 6800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.0857]_[D/loss avg - 0.0000]_[G/loss avg - 35.6239]
+[Train]_[Elapsed time - 0:40:07]_[iter - 7000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 16.3005]_[D/loss avg - 0.0000]_[G/loss avg - 34.8922]
+[Train]_[Elapsed time - 0:41:16]_[iter - 7200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4925]_[D/loss avg - 0.0000]_[G/loss avg - 34.1962]
+[Train]_[Elapsed time - 0:42:24]_[iter - 7400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.3315]_[D/loss avg - 0.0000]_[G/loss avg - 33.5846]
+[Train]_[Elapsed time - 0:43:33]_[iter - 7600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.9894]_[D/loss avg - 0.0000]_[G/loss avg - 33.0359]
+[Train]_[Elapsed time - 0:44:41]_[iter - 7800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.8704]_[D/loss avg - 0.0000]_[G/loss avg - 32.5389]
+[Train]_[Elapsed time - 0:45:49]_[iter - 8000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 11.0421]_[D/loss avg - 0.0000]_[G/loss avg - 31.9890]
+[Train]_[Elapsed time - 0:46:58]_[iter - 8200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.9566]_[D/loss avg - 0.0000]_[G/loss avg - 31.5115]
+[Train]_[Elapsed time - 0:48:06]_[iter - 8400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.0055]_[D/loss avg - 0.0000]_[G/loss avg - 31.0559]
+[Train]_[Elapsed time - 0:49:14]_[iter - 8600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.0402]_[D/loss avg - 0.0000]_[G/loss avg - 30.5855]
+[Train]_[Elapsed time - 0:50:23]_[iter - 8800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.2284]_[D/loss avg - 0.0000]_[G/loss avg - 30.1352]
+[Train]_[Elapsed time - 0:51:32]_[iter - 9000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.9266]_[D/loss avg - 0.0000]_[G/loss avg - 29.7260]
+[Train]_[Elapsed time - 0:52:40]_[iter - 9200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.7954]_[D/loss avg - 0.0000]_[G/loss avg - 29.3254]
+[Train]_[Elapsed time - 0:53:49]_[iter - 9400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.2833]_[D/loss avg - 0.0000]_[G/loss avg - 28.9395]
+[Train]_[Elapsed time - 0:54:57]_[iter - 9600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.1624]_[D/loss avg - 0.0000]_[G/loss avg - 28.5640]
+[Train]_[Elapsed time - 0:56:05]_[iter - 9800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.3389]_[D/loss avg - 0.0000]_[G/loss avg - 28.2197]
+[Train]_[Elapsed time - 0:57:14]_[iter - 10000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.1485]_[D/loss avg - 0.0000]_[G/loss avg - 27.8646]
+[Train]_[Elapsed time - 0:58:22]_[iter - 10200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.1280]_[D/loss avg - 0.0000]_[G/loss avg - 27.5127]
+[Train]_[Elapsed time - 0:59:31]_[iter - 10400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0035]_[D/loss avg - 0.0000]_[G/loss avg - 27.2147]
+[Train]_[Elapsed time - 1:00:39]_[iter - 10600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.3189]_[D/loss avg - 0.0000]_[G/loss avg - 26.9048]
+[Train]_[Elapsed time - 1:01:47]_[iter - 10800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.8205]_[D/loss avg - 0.0000]_[G/loss avg - 26.5906]
+[Train]_[Elapsed time - 1:02:56]_[iter - 11000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.1205]_[D/loss avg - 0.0000]_[G/loss avg - 26.2891]
+[Train]_[Elapsed time - 1:04:05]_[iter - 11200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.5267]_[D/loss avg - 0.0000]_[G/loss avg - 26.0192]
+[Train]_[Elapsed time - 1:05:13]_[iter - 11400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.4056]_[D/loss avg - 0.0000]_[G/loss avg - 25.7292]
+[Train]_[Elapsed time - 1:06:21]_[iter - 11600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7975]_[D/loss avg - 0.0000]_[G/loss avg - 25.4560]
+[Train]_[Elapsed time - 1:07:30]_[iter - 11800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.3611]_[D/loss avg - 0.0000]_[G/loss avg - 25.1954]
+[Train]_[Elapsed time - 1:08:38]_[iter - 12000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.5873]_[D/loss avg - 0.0000]_[G/loss avg - 24.9396]
+[Train]_[Elapsed time - 1:09:47]_[iter - 12200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.9188]_[D/loss avg - 0.0000]_[G/loss avg - 24.7060]
+[Train]_[Elapsed time - 1:10:55]_[iter - 12400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4750]_[D/loss avg - 0.0000]_[G/loss avg - 24.4742]
+[Train]_[Elapsed time - 1:12:04]_[iter - 12600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.2330]_[D/loss avg - 0.0000]_[G/loss avg - 24.2403]
+[Train]_[Elapsed time - 1:13:12]_[iter - 12800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.1784]_[D/loss avg - 0.0000]_[G/loss avg - 24.0105]
+[Train]_[Elapsed time - 1:14:21]_[iter - 13000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.3781]_[D/loss avg - 0.0000]_[G/loss avg - 23.7918]
+[Train]_[Elapsed time - 1:15:29]_[iter - 13200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.6679]_[D/loss avg - 0.0000]_[G/loss avg - 23.5861]
+[Train]_[Elapsed time - 1:16:37]_[iter - 13400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4227]_[D/loss avg - 0.0000]_[G/loss avg - 23.3845]
+[Train]_[Elapsed time - 1:17:46]_[iter - 13600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.5720]_[D/loss avg - 0.0000]_[G/loss avg - 23.1993]
+[Train]_[Elapsed time - 1:18:54]_[iter - 13800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.4353]_[D/loss avg - 0.0000]_[G/loss avg - 23.0135]
+[Train]_[Elapsed time - 1:20:03]_[iter - 14000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 10.3744]_[D/loss avg - 0.0000]_[G/loss avg - 22.8460]
+[Train]_[Elapsed time - 1:21:11]_[iter - 14200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7475]_[D/loss avg - 0.0000]_[G/loss avg - 22.6645]
+[Train]_[Elapsed time - 1:22:20]_[iter - 14400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.1820]_[D/loss avg - 0.0000]_[G/loss avg - 22.4958]
+[Train]_[Elapsed time - 1:23:28]_[iter - 14600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.8742]_[D/loss avg - 0.0000]_[G/loss avg - 22.3326]
+[Train]_[Elapsed time - 1:24:37]_[iter - 14800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7821]_[D/loss avg - 0.0000]_[G/loss avg - 22.1786]
+[Train]_[Elapsed time - 1:25:46]_[iter - 15000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.9317]_[D/loss avg - 0.0000]_[G/loss avg - 22.0205]
+[Train]_[Elapsed time - 1:26:54]_[iter - 15200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.1309]_[D/loss avg - 0.0000]_[G/loss avg - 21.8688]
+[Train]_[Elapsed time - 1:28:03]_[iter - 15400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.3344]_[D/loss avg - 0.0000]_[G/loss avg - 21.7200]
+[Train]_[Elapsed time - 1:29:11]_[iter - 15600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.3434]_[D/loss avg - 0.0000]_[G/loss avg - 21.5746]
+[Train]_[Elapsed time - 1:30:20]_[iter - 15800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.2334]_[D/loss avg - 0.0000]_[G/loss avg - 21.4289]
+[Train]_[Elapsed time - 1:31:28]_[iter - 16000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 7.1176]_[D/loss avg - 0.0000]_[G/loss avg - 21.2929]
+[Train]_[Elapsed time - 1:32:37]_[iter - 16200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.4233]_[D/loss avg - 0.0000]_[G/loss avg - 21.1606]
+[Train]_[Elapsed time - 1:33:45]_[iter - 16400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.9834]_[D/loss avg - 0.0000]_[G/loss avg - 21.0279]
+[Train]_[Elapsed time - 1:34:54]_[iter - 16600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 8.3113]_[D/loss avg - 0.0000]_[G/loss avg - 20.9021]
+[Train]_[Elapsed time - 1:36:02]_[iter - 16800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.8905]_[D/loss avg - 0.0000]_[G/loss avg - 20.7804]
+[Train]_[Elapsed time - 1:37:11]_[iter - 17000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.5523]_[D/loss avg - 0.0000]_[G/loss avg - 20.6520]
+[Train]_[Elapsed time - 1:38:20]_[iter - 17200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 7.5881]_[D/loss avg - 0.0000]_[G/loss avg - 20.5310]
+[Train]_[Elapsed time - 1:39:28]_[iter - 17400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.9771]_[D/loss avg - 0.0000]_[G/loss avg - 20.4034]
+[Train]_[Elapsed time - 1:40:37]_[iter - 17600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 8.0795]_[D/loss avg - 0.0000]_[G/loss avg - 20.2805]
+[Train]_[Elapsed time - 1:41:45]_[iter - 17800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 11.3558]_[D/loss avg - 0.0000]_[G/loss avg - 20.1606]
+[Train]_[Elapsed time - 1:42:54]_[iter - 18000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.6518]_[D/loss avg - 0.0000]_[G/loss avg - 20.0468]
+[Train]_[Elapsed time - 1:44:02]_[iter - 18200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.1995]_[D/loss avg - 0.0000]_[G/loss avg - 19.9288]
+[Train]_[Elapsed time - 1:45:11]_[iter - 18400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7024]_[D/loss avg - 0.0000]_[G/loss avg - 19.8183]
+[Train]_[Elapsed time - 1:46:19]_[iter - 18600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0279]_[D/loss avg - 0.0000]_[G/loss avg - 19.7061]
+[Train]_[Elapsed time - 1:47:28]_[iter - 18800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.7747]_[D/loss avg - 0.0000]_[G/loss avg - 19.5965]
+[Train]_[Elapsed time - 1:48:36]_[iter - 19000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.8986]_[D/loss avg - 0.0000]_[G/loss avg - 19.4863]
+[Train]_[Elapsed time - 1:49:44]_[iter - 19200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 11.1180]_[D/loss avg - 0.0000]_[G/loss avg - 19.3667]
+[Train]_[Elapsed time - 1:50:53]_[iter - 19400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.5969]_[D/loss avg - 0.0000]_[G/loss avg - 19.2532]
+[Train]_[Elapsed time - 1:52:01]_[iter - 19600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.3411]_[D/loss avg - 0.0000]_[G/loss avg - 19.1472]
+[Train]_[Elapsed time - 1:53:10]_[iter - 19800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.7064]_[D/loss avg - 0.0000]_[G/loss avg - 19.0439]
+[Train]_[Elapsed time - 1:54:19]_[iter - 20000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.9454]_[D/loss avg - 0.0000]_[G/loss avg - 18.9361]
+[Train]_[Elapsed time - 1:55:27]_[iter - 20200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 7.6922]_[D/loss avg - 0.0000]_[G/loss avg - 18.8317]
+[Train]_[Elapsed time - 1:56:36]_[iter - 20400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.6404]_[D/loss avg - 0.0000]_[G/loss avg - 18.7255]
+[Train]_[Elapsed time - 1:57:44]_[iter - 20600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6163]_[D/loss avg - 0.0000]_[G/loss avg - 18.6246]
+[Train]_[Elapsed time - 1:58:53]_[iter - 20800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.8162]_[D/loss avg - 0.0000]_[G/loss avg - 18.5203]
+[Train]_[Elapsed time - 2:00:02]_[iter - 21000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.6496]_[D/loss avg - 0.0000]_[G/loss avg - 18.4241]
+[Train]_[Elapsed time - 2:01:11]_[iter - 21200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6418]_[D/loss avg - 0.0000]_[G/loss avg - 18.3219]
+[Train]_[Elapsed time - 2:02:19]_[iter - 21400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.5831]_[D/loss avg - 0.0000]_[G/loss avg - 18.2187]
+[Train]_[Elapsed time - 2:03:28]_[iter - 21600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.2594]_[D/loss avg - 0.0000]_[G/loss avg - 18.1240]
+[Train]_[Elapsed time - 2:04:36]_[iter - 21800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.9049]_[D/loss avg - 0.0000]_[G/loss avg - 18.0248]
+[Train]_[Elapsed time - 2:05:45]_[iter - 22000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.7322]_[D/loss avg - 0.0000]_[G/loss avg - 17.9323]
+[Train]_[Elapsed time - 2:06:53]_[iter - 22200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7864]_[D/loss avg - 0.0000]_[G/loss avg - 17.8399]
+[Train]_[Elapsed time - 2:08:02]_[iter - 22400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.2513]_[D/loss avg - 0.0000]_[G/loss avg - 17.7469]
+[Train]_[Elapsed time - 2:09:10]_[iter - 22600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.6317]_[D/loss avg - 0.0000]_[G/loss avg - 17.6473]
+[Train]_[Elapsed time - 2:10:19]_[iter - 22800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.7874]_[D/loss avg - 0.0000]_[G/loss avg - 17.5606]
+[Train]_[Elapsed time - 2:11:28]_[iter - 23000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.3724]_[D/loss avg - 0.0000]_[G/loss avg - 17.4735]
+[Train]_[Elapsed time - 2:12:36]_[iter - 23200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.8073]_[D/loss avg - 0.0000]_[G/loss avg - 17.3899]
+[Train]_[Elapsed time - 2:13:45]_[iter - 23400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.8465]_[D/loss avg - 0.0000]_[G/loss avg - 17.3042]
+[Train]_[Elapsed time - 2:14:53]_[iter - 23600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6423]_[D/loss avg - 0.0000]_[G/loss avg - 17.2194]
+[Train]_[Elapsed time - 2:16:02]_[iter - 23800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.1434]_[D/loss avg - 0.0000]_[G/loss avg - 17.1366]
+[Train]_[Elapsed time - 2:17:10]_[iter - 24000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 7.6267]_[D/loss avg - 0.0000]_[G/loss avg - 17.0560]
+[Train]_[Elapsed time - 2:18:19]_[iter - 24200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.5948]_[D/loss avg - 0.0000]_[G/loss avg - 16.9801]
+[Train]_[Elapsed time - 2:19:27]_[iter - 24400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.8449]_[D/loss avg - 0.0000]_[G/loss avg - 16.8996]
+[Train]_[Elapsed time - 2:20:35]_[iter - 24600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.7203]_[D/loss avg - 0.0000]_[G/loss avg - 16.8180]
+[Train]_[Elapsed time - 2:21:44]_[iter - 24800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.2552]_[D/loss avg - 0.0000]_[G/loss avg - 16.7397]
+[Train]_[Elapsed time - 2:22:53]_[iter - 25000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.2233]_[D/loss avg - 0.0000]_[G/loss avg - 16.6646]
+[Train]_[Elapsed time - 2:24:01]_[iter - 25200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.9548]_[D/loss avg - 0.0000]_[G/loss avg - 16.5863]
+[Train]_[Elapsed time - 2:25:10]_[iter - 25400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.7232]_[D/loss avg - 0.0000]_[G/loss avg - 16.5147]
+[Train]_[Elapsed time - 2:26:18]_[iter - 25600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0656]_[D/loss avg - 0.0000]_[G/loss avg - 16.4403]
+[Train]_[Elapsed time - 2:27:27]_[iter - 25800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.9901]_[D/loss avg - 0.0000]_[G/loss avg - 16.3680]
+[Train]_[Elapsed time - 2:28:35]_[iter - 26000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.7991]_[D/loss avg - 0.0000]_[G/loss avg - 16.2941]
+[Train]_[Elapsed time - 2:29:44]_[iter - 26200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.4184]_[D/loss avg - 0.0000]_[G/loss avg - 16.2254]
+[Train]_[Elapsed time - 2:30:52]_[iter - 26400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.9049]_[D/loss avg - 0.0000]_[G/loss avg - 16.1536]
+[Train]_[Elapsed time - 2:32:00]_[iter - 26600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.7427]_[D/loss avg - 0.0000]_[G/loss avg - 16.0872]
+[Train]_[Elapsed time - 2:33:09]_[iter - 26800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.4737]_[D/loss avg - 0.0000]_[G/loss avg - 16.0222]
+[Train]_[Elapsed time - 2:34:17]_[iter - 27000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.3978]_[D/loss avg - 0.0000]_[G/loss avg - 15.9519]
+[Train]_[Elapsed time - 2:35:26]_[iter - 27200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.5937]_[D/loss avg - 0.0000]_[G/loss avg - 15.8858]
+[Train]_[Elapsed time - 2:36:34]_[iter - 27400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.4787]_[D/loss avg - 0.0000]_[G/loss avg - 15.8203]
+[Train]_[Elapsed time - 2:37:43]_[iter - 27600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.1174]_[D/loss avg - 0.0000]_[G/loss avg - 15.7582]
+[Train]_[Elapsed time - 2:38:51]_[iter - 27800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 8.4808]_[D/loss avg - 0.0000]_[G/loss avg - 15.6993]
+[Train]_[Elapsed time - 2:40:00]_[iter - 28000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.0657]_[D/loss avg - 0.0000]_[G/loss avg - 15.6411]
+[Train]_[Elapsed time - 2:41:08]_[iter - 28200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.6657]_[D/loss avg - 0.0000]_[G/loss avg - 15.5804]
+[Train]_[Elapsed time - 2:42:16]_[iter - 28400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.5106]_[D/loss avg - 0.0000]_[G/loss avg - 15.5211]
+[Train]_[Elapsed time - 2:43:25]_[iter - 28600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.5202]_[D/loss avg - 0.0000]_[G/loss avg - 15.4623]
+[Train]_[Elapsed time - 2:44:33]_[iter - 28800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6466]_[D/loss avg - 0.0000]_[G/loss avg - 15.4053]
+[Train]_[Elapsed time - 2:45:42]_[iter - 29000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.5193]_[D/loss avg - 0.0000]_[G/loss avg - 15.3484]
+[Train]_[Elapsed time - 2:46:51]_[iter - 29200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 10.8240]_[D/loss avg - 0.0000]_[G/loss avg - 15.2951]
+[Train]_[Elapsed time - 2:47:59]_[iter - 29400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.1744]_[D/loss avg - 0.0000]_[G/loss avg - 15.2464]
+[Train]_[Elapsed time - 2:49:08]_[iter - 29600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.8182]_[D/loss avg - 0.0000]_[G/loss avg - 15.1934]
+[Train]_[Elapsed time - 2:50:16]_[iter - 29800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.4505]_[D/loss avg - 0.0000]_[G/loss avg - 15.1437]
+[Train]_[Elapsed time - 2:51:25]_[iter - 30000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.3959]_[D/loss avg - 0.0000]_[G/loss avg - 15.0935]
+[Train]_[Elapsed time - 2:52:33]_[iter - 30200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.9043]_[D/loss avg - 0.0000]_[G/loss avg - 15.0422]
+[Train]_[Elapsed time - 2:53:42]_[iter - 30400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.9126]_[D/loss avg - 0.0000]_[G/loss avg - 14.9909]
+[Train]_[Elapsed time - 2:54:51]_[iter - 30600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.7132]_[D/loss avg - 0.0000]_[G/loss avg - 14.9444]
+[Train]_[Elapsed time - 2:55:59]_[iter - 30800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.1214]_[D/loss avg - 0.0000]_[G/loss avg - 14.8965]
+[Train]_[Elapsed time - 2:57:08]_[iter - 31000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.6692]_[D/loss avg - 0.0000]_[G/loss avg - 14.8471]
+[Train]_[Elapsed time - 2:58:16]_[iter - 31200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.2268]_[D/loss avg - 0.0000]_[G/loss avg - 14.7971]
+[Train]_[Elapsed time - 2:59:25]_[iter - 31400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.5835]_[D/loss avg - 0.0000]_[G/loss avg - 14.7493]
+[Train]_[Elapsed time - 3:00:34]_[iter - 31600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.0544]_[D/loss avg - 0.0000]_[G/loss avg - 14.7026]
+[Train]_[Elapsed time - 3:01:42]_[iter - 31800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.0355]_[D/loss avg - 0.0000]_[G/loss avg - 14.6547]
+[Train]_[Elapsed time - 3:02:51]_[iter - 32000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6429]_[D/loss avg - 0.0000]_[G/loss avg - 14.6048]
+[Train]_[Elapsed time - 3:04:00]_[iter - 32200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.4635]_[D/loss avg - 0.0000]_[G/loss avg - 14.5623]
+[Train]_[Elapsed time - 3:05:08]_[iter - 32400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7051]_[D/loss avg - 0.0000]_[G/loss avg - 14.5114]
+[Train]_[Elapsed time - 3:06:17]_[iter - 32600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4680]_[D/loss avg - 0.0000]_[G/loss avg - 14.4676]
+[Train]_[Elapsed time - 3:07:25]_[iter - 32800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.3255]_[D/loss avg - 0.0000]_[G/loss avg - 14.4202]
+[Train]_[Elapsed time - 3:08:34]_[iter - 33000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.3898]_[D/loss avg - 0.0000]_[G/loss avg - 14.3775]
+[Train]_[Elapsed time - 3:09:42]_[iter - 33200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0188]_[D/loss avg - 0.0000]_[G/loss avg - 14.3314]
+[Train]_[Elapsed time - 3:10:51]_[iter - 33400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.6993]_[D/loss avg - 0.0000]_[G/loss avg - 14.2913]
+[Train]_[Elapsed time - 3:11:59]_[iter - 33600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.7924]_[D/loss avg - 0.0000]_[G/loss avg - 14.2482]
+[Train]_[Elapsed time - 3:13:08]_[iter - 33800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.2190]_[D/loss avg - 0.0000]_[G/loss avg - 14.2048]
+[Train]_[Elapsed time - 3:14:16]_[iter - 34000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.4658]_[D/loss avg - 0.0000]_[G/loss avg - 14.1601]
+[Train]_[Elapsed time - 3:15:25]_[iter - 34200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.0833]_[D/loss avg - 0.0000]_[G/loss avg - 14.1152]
+[Train]_[Elapsed time - 3:16:34]_[iter - 34400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.3445]_[D/loss avg - 0.0000]_[G/loss avg - 14.0741]
+[Train]_[Elapsed time - 3:17:42]_[iter - 34600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.9012]_[D/loss avg - 0.0000]_[G/loss avg - 14.0333]
+[Train]_[Elapsed time - 3:18:51]_[iter - 34800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.6673]_[D/loss avg - 0.0000]_[G/loss avg - 13.9896]
+[Train]_[Elapsed time - 3:20:00]_[iter - 35000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.3818]_[D/loss avg - 0.0000]_[G/loss avg - 13.9454]
+[Train]_[Elapsed time - 3:21:08]_[iter - 35200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.7074]_[D/loss avg - 0.0000]_[G/loss avg - 13.9093]
+[Train]_[Elapsed time - 3:22:17]_[iter - 35400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 7.5272]_[D/loss avg - 0.0000]_[G/loss avg - 13.8696]
+[Train]_[Elapsed time - 3:23:25]_[iter - 35600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.6329]_[D/loss avg - 0.0000]_[G/loss avg - 13.8259]
+[Train]_[Elapsed time - 3:24:33]_[iter - 35800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4661]_[D/loss avg - 0.0000]_[G/loss avg - 13.7849]
+[Train]_[Elapsed time - 3:25:42]_[iter - 36000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.8058]_[D/loss avg - 0.0000]_[G/loss avg - 13.7436]
+[Train]_[Elapsed time - 3:26:51]_[iter - 36200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.5466]_[D/loss avg - 0.0000]_[G/loss avg - 13.7047]
+[Train]_[Elapsed time - 3:28:00]_[iter - 36400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.8748]_[D/loss avg - 0.0000]_[G/loss avg - 13.6669]
+[Train]_[Elapsed time - 3:29:08]_[iter - 36600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.3863]_[D/loss avg - 0.0000]_[G/loss avg - 13.6320]
+[Train]_[Elapsed time - 3:30:16]_[iter - 36800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.9573]_[D/loss avg - 0.0000]_[G/loss avg - 13.5944]
+[Train]_[Elapsed time - 3:31:25]_[iter - 37000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.5757]_[D/loss avg - 0.0000]_[G/loss avg - 13.5586]
+[Train]_[Elapsed time - 3:32:33]_[iter - 37200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.7685]_[D/loss avg - 0.0000]_[G/loss avg - 13.5236]
+[Train]_[Elapsed time - 3:33:42]_[iter - 37400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.9629]_[D/loss avg - 0.0000]_[G/loss avg - 13.4875]
+[Train]_[Elapsed time - 3:34:50]_[iter - 37600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 5.8417]_[D/loss avg - 0.0000]_[G/loss avg - 13.4509]
+[Train]_[Elapsed time - 3:35:59]_[iter - 37800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.0896]_[D/loss avg - 0.0000]_[G/loss avg - 13.4141]
+[Train]_[Elapsed time - 3:37:08]_[iter - 38000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 6.1039]_[D/loss avg - 0.0000]_[G/loss avg - 13.3768]
+[Train]_[Elapsed time - 3:38:16]_[iter - 38200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4470]_[D/loss avg - 0.0000]_[G/loss avg - 13.3398]
+[Train]_[Elapsed time - 3:39:24]_[iter - 38400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6523]_[D/loss avg - 0.0000]_[G/loss avg - 13.3032]
+[Train]_[Elapsed time - 3:40:33]_[iter - 38600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6456]_[D/loss avg - 0.0000]_[G/loss avg - 13.2656]
+[Train]_[Elapsed time - 3:41:41]_[iter - 38800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.1359]_[D/loss avg - 0.0000]_[G/loss avg - 13.2278]
+[Train]_[Elapsed time - 3:42:50]_[iter - 39000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6696]_[D/loss avg - 0.0000]_[G/loss avg - 13.1916]
+[Train]_[Elapsed time - 3:43:58]_[iter - 39200/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 1.8980]_[D/loss avg - 0.0000]_[G/loss avg - 13.1574]
+[Train]_[Elapsed time - 3:45:07]_[iter - 39400/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 4.5916]_[D/loss avg - 0.0000]_[G/loss avg - 13.1213]
+[Train]_[Elapsed time - 3:46:15]_[iter - 39600/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 3.6263]_[D/loss avg - 0.0000]_[G/loss avg - 13.0887]
+[Train]_[Elapsed time - 3:47:24]_[iter - 39800/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.9969]_[D/loss avg - 0.0000]_[G/loss avg - 13.0559]
+[Train]_[Elapsed time - 3:48:32]_[iter - 40000/500000]_[Epoch - 1]_[D/loss - 0.0000]_[G/loss - 2.4943]_[D/loss avg - 0.0000]_[G/loss avg - 13.0227]
+[Train]_[Elapsed time - 3:50:00]_[iter - 40200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 6.9674]_[D/loss avg - 0.0000]_[G/loss avg - 6.9632]
+[Train]_[Elapsed time - 3:51:08]_[iter - 40400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.0084]_[D/loss avg - 0.0000]_[G/loss avg - 6.5707]
+[Train]_[Elapsed time - 3:52:17]_[iter - 40600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.1939]_[D/loss avg - 0.0000]_[G/loss avg - 6.3035]
+[Train]_[Elapsed time - 3:53:25]_[iter - 40800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 3.2310]_[D/loss avg - 0.0000]_[G/loss avg - 6.2010]
+[Train]_[Elapsed time - 3:54:33]_[iter - 41000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.8932]_[D/loss avg - 0.0000]_[G/loss avg - 6.0961]
+[Train]_[Elapsed time - 3:55:42]_[iter - 41200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.5328]_[D/loss avg - 0.0000]_[G/loss avg - 6.1814]
+[Train]_[Elapsed time - 3:56:50]_[iter - 41400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.6994]_[D/loss avg - 0.0000]_[G/loss avg - 6.1699]
+[Train]_[Elapsed time - 3:57:58]_[iter - 41600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.3101]_[D/loss avg - 0.0000]_[G/loss avg - 6.2074]
+[Train]_[Elapsed time - 3:59:07]_[iter - 41800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.5251]_[D/loss avg - 0.0000]_[G/loss avg - 6.2006]
+[Train]_[Elapsed time - 4:00:15]_[iter - 42000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.9002]_[D/loss avg - 0.0000]_[G/loss avg - 6.2692]
+[Train]_[Elapsed time - 4:01:24]_[iter - 42200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 6.4934]_[D/loss avg - 0.0000]_[G/loss avg - 6.2591]
+[Train]_[Elapsed time - 4:02:32]_[iter - 42400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 5.2244]_[D/loss avg - 0.0000]_[G/loss avg - 6.2390]
+[Train]_[Elapsed time - 4:03:41]_[iter - 42600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 5.5711]_[D/loss avg - 0.0000]_[G/loss avg - 6.2663]
+[Train]_[Elapsed time - 4:04:49]_[iter - 42800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 4.4221]_[D/loss avg - 0.0000]_[G/loss avg - 6.2520]
+[Train]_[Elapsed time - 4:05:58]_[iter - 43000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.3403]_[D/loss avg - 0.0000]_[G/loss avg - 6.2473]
+[Train]_[Elapsed time - 4:07:06]_[iter - 43200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.8138]_[D/loss avg - 0.0000]_[G/loss avg - 6.1953]
+[Train]_[Elapsed time - 4:08:15]_[iter - 43400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.1083]_[D/loss avg - 0.0000]_[G/loss avg - 6.1740]
+[Train]_[Elapsed time - 4:09:23]_[iter - 43600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.5222]_[D/loss avg - 0.0000]_[G/loss avg - 6.1909]
+[Train]_[Elapsed time - 4:10:32]_[iter - 43800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.4449]_[D/loss avg - 0.0000]_[G/loss avg - 6.1750]
+[Train]_[Elapsed time - 4:11:41]_[iter - 44000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 5.3225]_[D/loss avg - 0.0000]_[G/loss avg - 6.1808]
+[Train]_[Elapsed time - 4:12:49]_[iter - 44200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.8870]_[D/loss avg - 0.0000]_[G/loss avg - 6.1517]
+[Train]_[Elapsed time - 4:13:58]_[iter - 44400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 4.9734]_[D/loss avg - 0.0000]_[G/loss avg - 6.1513]
+[Train]_[Elapsed time - 4:15:06]_[iter - 44600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.6633]_[D/loss avg - 0.0000]_[G/loss avg - 6.1315]
+[Train]_[Elapsed time - 4:16:15]_[iter - 44800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 3.5201]_[D/loss avg - 0.0000]_[G/loss avg - 6.1106]
+[Train]_[Elapsed time - 4:17:24]_[iter - 45000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.2549]_[D/loss avg - 0.0000]_[G/loss avg - 6.0937]
+[Train]_[Elapsed time - 4:18:32]_[iter - 45200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.6832]_[D/loss avg - 0.0000]_[G/loss avg - 6.0821]
+[Train]_[Elapsed time - 4:19:41]_[iter - 45400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.9129]_[D/loss avg - 0.0000]_[G/loss avg - 6.0671]
+[Train]_[Elapsed time - 4:20:50]_[iter - 45600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.6807]_[D/loss avg - 0.0000]_[G/loss avg - 6.0412]
+[Train]_[Elapsed time - 4:21:58]_[iter - 45800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.9649]_[D/loss avg - 0.0000]_[G/loss avg - 6.0391]
+[Train]_[Elapsed time - 4:23:07]_[iter - 46000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.0522]_[D/loss avg - 0.0000]_[G/loss avg - 6.0159]
+[Train]_[Elapsed time - 4:24:15]_[iter - 46200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.5202]_[D/loss avg - 0.0000]_[G/loss avg - 6.0017]
+[Train]_[Elapsed time - 4:25:23]_[iter - 46400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.5587]_[D/loss avg - 0.0000]_[G/loss avg - 5.9711]
+[Train]_[Elapsed time - 4:26:31]_[iter - 46600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.8520]_[D/loss avg - 0.0000]_[G/loss avg - 5.9559]
+[Train]_[Elapsed time - 4:27:40]_[iter - 46800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.4643]_[D/loss avg - 0.0000]_[G/loss avg - 5.9492]
+[Train]_[Elapsed time - 4:28:48]_[iter - 47000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 4.1983]_[D/loss avg - 0.0000]_[G/loss avg - 5.9395]
+[Train]_[Elapsed time - 4:29:57]_[iter - 47200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.8386]_[D/loss avg - 0.0000]_[G/loss avg - 5.9319]
+[Train]_[Elapsed time - 4:31:05]_[iter - 47400/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.9290]_[D/loss avg - 0.0000]_[G/loss avg - 5.9207]
+[Train]_[Elapsed time - 4:32:14]_[iter - 47600/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.4098]_[D/loss avg - 0.0000]_[G/loss avg - 5.9047]
+[Train]_[Elapsed time - 4:33:22]_[iter - 47800/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 1.9365]_[D/loss avg - 0.0000]_[G/loss avg - 5.8915]
+[Train]_[Elapsed time - 4:34:30]_[iter - 48000/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 2.5935]_[D/loss avg - 0.0000]_[G/loss avg - 5.8777]
+[Train]_[Elapsed time - 4:35:39]_[iter - 48200/500000]_[Epoch - 2]_[D/loss - 0.0000]_[G/loss - 3.1960]_[D/loss avg - 0.0000]_[G/loss avg - 5.8640]
+/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/autograd/__init__.py:277: UserWarning: Error detected in SqrtBackward0. Traceback of forward call that caused the error:
+  File "main.py", line 145, in <module>
+    main_worker(args, logger)
+  File "main.py", line 111, in main_worker
+    model.train(cur_iter)
+  File "/home/jeonghokim/GANs/VQ-GAN/models/VQGAN.py", line 69, in train
+    perceptual_loss = self.criterion_LPIPS(self.real_img, recon_img)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jeonghokim/GANs/VQ-GAN/models/lpips.py", line 83, in forward
+    feats0[kk], feats1[kk] = normalize_tensor(outs0[kk]), normalize_tensor(outs1[kk])
+  File "/home/jeonghokim/GANs/VQ-GAN/models/lpips.py", line 153, in normalize_tensor
+    norm_factor = torch.sqrt(torch.sum(x**2,dim=1,keepdim=True))
+ (Triggered internally at  ../torch/csrc/autograd/python_anomaly_mode.cpp:104.)
+  allow_unused, accumulate_grad=False)  # Calls into the C++ engine to run the backward pass
+error in adapt weight
+/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/autograd/__init__.py:175: UserWarning: Error detected in SqrtBackward0. Traceback of forward call that caused the error:
+  File "main.py", line 145, in <module>
+    main_worker(args, logger)
+  File "main.py", line 111, in main_worker
+    model.train(cur_iter)
+  File "/home/jeonghokim/GANs/VQ-GAN/models/VQGAN.py", line 69, in train
+    perceptual_loss = self.criterion_LPIPS(self.real_img, recon_img)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jeonghokim/GANs/VQ-GAN/models/lpips.py", line 83, in forward
+    feats0[kk], feats1[kk] = normalize_tensor(outs0[kk]), normalize_tensor(outs1[kk])
+  File "/home/jeonghokim/GANs/VQ-GAN/models/lpips.py", line 153, in normalize_tensor
+    norm_factor = torch.sqrt(torch.sum(x**2,dim=1,keepdim=True))
+ (Triggered internally at  ../torch/csrc/autograd/python_anomaly_mode.cpp:104.)
+  allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "main.py", line 145, in <module>
+    main_worker(args, logger)
+  File "main.py", line 111, in main_worker
+    model.train(cur_iter)
+  File "/home/jeonghokim/GANs/VQ-GAN/models/VQGAN.py", line 86, in train
+    G_loss.backward()
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/autograd/__init__.py", line 175, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+RuntimeError: Function 'SqrtBackward0' returned nan values in its 0th output.
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41834 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41836 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41837 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41838 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41839 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41840 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 41842 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 1 (pid: 41835) of binary: /home/jeonghokim/anaconda3/envs/CECT/bin/python
+Traceback (most recent call last):
+  File "/home/jeonghokim/anaconda3/envs/CECT/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 345, in wrapper
+    return f(*args, **kwargs)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/run.py", line 724, in main
+    run(args)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/run.py", line 718, in run
+    )(*cmd_args)
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/jeonghokim/anaconda3/envs/CECT/lib/python3.7/site-packages/torch/distributed/launcher/api.py", line 247, in launch_agent
+    failures=result.failures,
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2022-08-31_15:50:54
+  host      : gpuserver01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 41835)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
